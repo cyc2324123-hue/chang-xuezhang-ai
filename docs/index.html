@@ -1,0 +1,554 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f4f0e7" />
+    <meta name="description" content="常学长AI V2.6正式版：安阳工学院2026级新生的移动端校园服务门户，官方入口、60个高频问题、校园实拍与即时回答。" />
+    <meta property="og:title" content="常学长AI｜安工2026新生生活指南" />
+    <meta property="og:description" content="把第一次到安工，提前过一遍。" />
+    <meta property="og:image" content="public/og-v2.png" />
+    <title>常学长AI V2.6正式版｜安工2026新生服务门户</title>
+    <link rel="stylesheet" href="app/globals.css" />
+  </head>
+  <body>
+    <div class="noise" aria-hidden="true"></div>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="返回首页">
+        <img class="brand-avatar" src="public/avatar-v25.webp" alt="常学长防伪头像" />
+        <span><strong>常学长AI <i>V2.6</i></strong><small>安工新生服务门户</small></span>
+      </a>
+      <nav class="desktop-nav" aria-label="主导航">
+        <a href="#services">服务台</a>
+        <a href="#questions">问答库</a>
+        <a href="#campus">校园实拍</a>
+        <a href="#official">官方入口</a>
+      </nav>
+      <button class="contact-pill" type="button" data-open-contact>
+        <span class="online-dot"></span>找常学长本人
+      </button>
+    </header>
+
+    <main id="top">
+      <section class="hero page-shell">
+        <div class="hero-copy reveal">
+          <div class="eyebrow"><span>2026 FRESHMAN PORTAL · V2.6</span><i></i><span>非学校官方</span></div>
+          <h1>把第一次到安工，<br /><em>提前过一遍。</em></h1>
+          <p class="hero-lead">从选宿、报到到军训和第一顿饭，先用真实资料与在校经历回答；不确定的，明确告诉你不确定。</p>
+          <form class="hero-ask" id="heroForm">
+            <label class="sr-only" for="heroInput">输入你的问题</label>
+            <span class="spark-icon" aria-hidden="true">✦</span>
+            <input id="heroInput" autocomplete="off" placeholder="比如：机械学院哪天选宿舍？" />
+            <button type="submit" aria-label="提问"><span>问一问</span><b>↗</b></button>
+          </form>
+          <div class="quick-row" aria-label="热门问题">
+            <span>大家正在问</span>
+            <button type="button" data-question="dorm-online">线上选宿</button>
+            <button type="button" data-question="life-card">手机卡</button>
+            <button type="button" data-question="safe-days">军训多久</button>
+          </div>
+          <div class="hero-stats">
+            <div><strong id="questionCount">60</strong><span>个真实问题</span></div>
+            <div><strong>14</strong><span>组校园实拍</span></div>
+            <div><strong>0</strong><span>次强制注册</span></div>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal" aria-label="安阳工学院校园实拍拼贴">
+          <figure class="hero-main-photo">
+            <img src="public/campus/gate.webp" alt="安阳工学院南大门实拍" fetchpriority="high" />
+            <figcaption><span>01</span><div><strong>南大门</strong><small>第一次见面，从这里开始</small></div></figcaption>
+          </figure>
+          <figure class="hero-side-photo photo-a">
+            <img src="public/campus/campus-road.webp" alt="阳光穿过校园道路" />
+            <figcaption>校园里的光 · 实拍</figcaption>
+          </figure>
+          <figure class="hero-side-photo photo-b">
+            <img src="public/campus/meal.webp" alt="行知苑餐厅的自选菜" />
+            <figcaption>开学第一顿饭</figcaption>
+          </figure>
+          <div class="photo-note"><i>真实</i><span>不是样板图<br />是正在发生的校园生活</span></div>
+        </div>
+      </section>
+
+      <div class="ticker" aria-hidden="true">
+        <div class="ticker-track">
+          <span>选宿舍</span><b>✦</b><span>报到材料</span><b>✦</b><span>交通路线</span><b>✦</b><span>军训准备</span><b>✦</b><span>校园生活</span><b>✦</b><span>学习成长</span><b>✦</b>
+          <span>选宿舍</span><b>✦</b><span>报到材料</span><b>✦</b><span>交通路线</span><b>✦</b><span>军训准备</span><b>✦</b><span>校园生活</span><b>✦</b><span>学习成长</span><b>✦</b>
+        </div>
+      </div>
+
+      <section class="service-portal page-shell" id="services" aria-labelledby="services-title">
+        <div class="portal-head reveal">
+          <div>
+            <div class="section-kicker"><span>新生服务台</span><i></i><b>ONE STOP CAMPUS HUB</b></div>
+            <h2 id="services-title">不用翻群聊，<br />常用的都在这里。</h2>
+          </div>
+          <div class="notice-card">
+            <span class="notice-icon">!</span>
+            <p><strong>新生公告</strong><small>选宿按学院分批开放，具体楼栋与床位以易校园实际显示为准。</small></p>
+            <button type="button" data-question="dorm-date">查看时间表 ↗</button>
+          </div>
+        </div>
+
+        <div class="portal-layout reveal">
+          <div class="service-grid" aria-label="新生高频服务">
+            <a class="service-tile tile-blue" href="https://vr.justeasy.cn/view/1p7225t0de5f0644-1782869033.html" target="_blank" rel="noopener noreferrer">
+              <img src="public/icons/map.webp" alt="校园地图入口图标" /><span><strong>VR逛校园</strong><small>360°云游安工</small></span><b>↗</b>
+            </a>
+            <button class="service-tile tile-cream" type="button" data-category="pre">
+              <img src="public/icons/guide.webp" alt="新生指南入口图标" /><span><strong>新生必看</strong><small>入学前8件事</small></span><b>→</b>
+            </button>
+            <button class="service-tile tile-green" type="button" data-question="dorm-online">
+              <img src="public/icons/dorm.webp" alt="宿舍选宿入口图标" /><span><strong>线上选宿</strong><small>流程与时间表</small></span><b>→</b>
+            </button>
+            <button class="service-tile tile-sky" type="button" data-category="arrival">
+              <img src="public/icons/arrival.webp" alt="报到交通入口图标" /><span><strong>报到交通</strong><small>车站与到校动线</small></span><b>→</b>
+            </button>
+            <button class="service-tile tile-coral" type="button" data-category="life">
+              <img src="public/icons/food.webp" alt="食堂生活入口图标" /><span><strong>吃住日常</strong><small>饭价与生活费</small></span><b>→</b>
+            </button>
+            <button class="service-tile tile-blue" type="button" data-category="study">
+              <img src="public/icons/study.webp" alt="学习成长入口图标" /><span><strong>学习成长</strong><small>课程·社团·实训</small></span><b>→</b>
+            </button>
+            <a class="service-tile tile-gold" href="#official">
+              <img src="public/icons/official.webp" alt="官方入口图标" /><span><strong>官方入口</strong><small>系统与办事大厅</small></span><b>↓</b>
+            </a>
+            <button class="service-tile tile-green" type="button" data-open-contact>
+              <img src="public/icons/contact.webp" alt="联系常学长入口图标" /><span><strong>问常学长</strong><small>个体问题找本人</small></span><b>↗</b>
+            </button>
+          </div>
+
+          <aside class="portal-side">
+            <div class="portal-photo">
+              <img src="public/campus/dorm-building.webp" alt="行知苑学生公寓实拍" />
+              <span>校园实拍 02 / 行知苑</span>
+              <strong>从宿舍开始，<br />提前认识大学生活。</strong>
+            </div>
+            <div class="portal-facts">
+              <div><strong>08:00—18:00</strong><span>选宿开放时段</span></div>
+              <div><strong>90×190cm</strong><span>指南标注床铺尺寸</span></div>
+              <button type="button" data-question="dorm-price">查看住宿费用 →</button>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="official-hub" id="official" aria-labelledby="official-title">
+        <div class="page-shell">
+          <div class="official-heading reveal">
+            <div><div class="section-kicker light"><span>学校官方入口</span><i></i><b>VERIFIED LINKS</b></div><h2 id="official-title">需要办事，<br />请走官方渠道。</h2></div>
+            <p><span>✓</span>以下链接已于 2026-08-12 检查可访问。账号、密码、验证码只在学校官方页面输入。</p>
+          </div>
+          <div class="official-grid reveal">
+            <a href="https://www.ayit.edu.cn/" target="_blank" rel="noopener noreferrer"><span>01</span><div><strong>安阳工学院官网</strong><small>新闻、通知与学校信息</small></div><b>↗</b></a>
+            <a href="https://i.ayit.edu.cn/one/app" target="_blank" rel="noopener noreferrer"><span>02</span><div><strong>智慧安工应用中心</strong><small>校内应用统一入口</small></div><b>↗</b></a>
+            <a href="https://i.ayit.edu.cn/one/plan/566195819092611072" target="_blank" rel="noopener noreferrer"><span>03</span><div><strong>网上办事大厅</strong><small>校内事项与流程</small></div><b>↗</b></a>
+            <a href="https://vr.justeasy.cn/view/1p7225t0de5f0644-1782869033.html" target="_blank" rel="noopener noreferrer"><span>04</span><div><strong>VR全景云游</strong><small>在线查看校园实景</small></div><b>↗</b></a>
+            <a href="https://www.ayit.edu.cn/xxgk/xyfg.htm" target="_blank" rel="noopener noreferrer"><span>05</span><div><strong>官方校园风光</strong><small>校门、教学楼与校园景观</small></div><b>↗</b></a>
+            <a href="https://www.ayit.edu.cn/xxgk/xxjj.htm" target="_blank" rel="noopener noreferrer"><span>06</span><div><strong>学校简介</strong><small>办学概况与数据</small></div><b>↗</b></a>
+          </div>
+          <p class="official-note">本站提供的是整理与导航，不代替学校发布。动态政策、缴费、学籍和正式事务以官方页面最新内容为准。</p>
+        </div>
+      </section>
+
+      <section class="journey page-shell reveal" aria-labelledby="journey-title">
+        <div class="section-kicker"><span>先按阶段找</span><i></i><b>YOUR JOURNEY</b></div>
+        <div class="section-heading">
+          <h2 id="journey-title">你现在，走到哪一步了？</h2>
+          <p>不必从头读攻略。点进正在发生的那一步，直接找答案。</p>
+        </div>
+        <div class="journey-grid">
+          <button class="journey-card coral" type="button" data-category="pre">
+            <span class="journey-index">01</span><span class="journey-icon">✉</span>
+            <strong>录取之后</strong><small>通知书 · 缴费 · 档案</small><i>10 个问题 →</i>
+          </button>
+          <button class="journey-card yellow" type="button" data-category="dorm">
+            <span class="journey-index">02</span><span class="journey-icon">⌂</span>
+            <strong>先把宿舍选好</strong><small>时间 · 房型 · 真实居住</small><i>10 个问题 →</i>
+          </button>
+          <button class="journey-card green" type="button" data-category="arrival">
+            <span class="journey-index">03</span><span class="journey-icon">↗</span>
+            <strong>第一次到校</strong><small>车站 · 报到 · 行李</small><i>10 个问题 →</i>
+          </button>
+          <button class="journey-card blue" type="button" data-category="life">
+            <span class="journey-index">04</span><span class="journey-icon">☻</span>
+            <strong>开始校园生活</strong><small>吃饭 · 网络 · 日常</small><i>10 个问题 →</i>
+          </button>
+        </div>
+      </section>
+
+      <section class="assistant-section" id="assistant" aria-labelledby="assistant-title">
+        <div class="page-shell assistant-shell">
+          <div class="assistant-intro reveal">
+            <div class="section-kicker light"><span>常学长即时问答</span><i></i><b>CURATED ANSWERS · CLEAR SOURCES</b></div>
+            <h2 id="assistant-title">像问学长一样问，<br />但每句话都有边界。</h2>
+            <p>从60个经过整理的真实问题中匹配回答，并清楚标出来源、核验时间与适用范围；涉及动态政策和个人事项时，会提醒你进一步复核。</p>
+            <div class="trust-list">
+              <div><span class="trust-symbol official">✓</span><p><strong>官方资料</strong><small>给出处、日期和适用范围</small></p></div>
+              <div><span class="trust-symbol experience">◎</span><p><strong>一手经历</strong><small>不把一个人的宿舍说成全校</small></p></div>
+              <div><span class="trust-symbol pending">?</span><p><strong>动态待核</strong><small>没发布的安排绝不猜</small></p></div>
+            </div>
+          </div>
+
+          <div class="chat-window reveal" id="chatWindow">
+            <div class="chat-topbar">
+              <div class="chat-person"><img src="public/avatar-v25.webp" alt="常学长防伪头像" /><span><strong>常学长AI</strong><small><i></i>V2.6 新生问答库在线</small></span></div>
+              <span class="chat-mode">即时回答</span>
+            </div>
+            <div class="chat-body" id="chatBody" aria-live="polite">
+              <div class="chat-date">今天 · 第一次见面</div>
+              <div class="message assistant-message intro-message">
+                <div class="message-avatar">常</div>
+                <div class="message-content">
+                  <p>你好，我是常学长的 AI 数字分身。</p>
+                  <p>我不是学校官方，也不是本人实时打字。你可以先从下面选一个真实问题，看看我会怎么回答。</p>
+                  <div class="starter-chips">
+                    <button type="button" data-question="dorm-online">2026级怎么线上选宿舍？</button>
+                    <button type="button" data-question="dorm-real">安工宿舍真实住着怎么样？</button>
+                    <button type="button" data-question="safe-days">2026军训到底多少天？</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <form class="chat-composer" id="chatForm">
+              <label class="sr-only" for="chatInput">问常学长AI</label>
+              <input id="chatInput" autocomplete="off" placeholder="从60个问题里问一句…" />
+              <button type="submit"><span>发送</span><b>↑</b></button>
+            </form>
+            <p class="composer-note">V2.6 正式版 · 回答附来源与适用范围 · 请勿输入身份证、学号或银行卡信息</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="question-library page-shell" id="questions" aria-labelledby="questions-title">
+        <div class="section-kicker reveal"><span>真实问题库</span><i></i><b>60 QUESTIONS · 97 POSTS REVIEWED</b></div>
+        <div class="section-heading library-heading reveal">
+          <div><h2 id="questions-title">新生真正会问的，<br />都摊开给你看。</h2><p>已交叉参考启动包知识库与97篇审核作品；内容经验与官方事实分开标注，不用你提前知道“该问什么”。</p></div>
+          <label class="library-search"><span>⌕</span><input id="librarySearch" placeholder="搜索：宿舍、军训、校园网…" /><kbd>60</kbd></label>
+        </div>
+        <div class="category-tabs reveal" id="categoryTabs" role="tablist" aria-label="问题分类">
+          <button type="button" data-filter="all" aria-selected="false">全部 <span>60</span></button>
+          <button class="active" type="button" data-filter="pre" aria-selected="true">入学前 <span>10</span></button>
+          <button type="button" data-filter="dorm" aria-selected="false">选宿舍 <span>10</span></button>
+          <button type="button" data-filter="arrival" aria-selected="false">来报到 <span>10</span></button>
+          <button type="button" data-filter="life" aria-selected="false">校园生活 <span>10</span></button>
+          <button type="button" data-filter="study" aria-selected="false">学习成长 <span>10</span></button>
+          <button type="button" data-filter="safe" aria-selected="false">军训安全 <span>10</span></button>
+        </div>
+        <div class="question-grid" id="questionGrid"></div>
+        <button class="load-more" id="loadMoreButton" type="button" hidden>继续加载问题 <span>↓</span></button>
+        <div class="empty-state" id="emptyState" hidden><span>⌕</span><strong>暂时没找到同名问题</strong><p>换一个关键词，或者直接在上面的对话框里问。</p></div>
+      </section>
+
+      <section class="campus-gallery" id="campus" aria-labelledby="campus-title">
+        <div class="page-shell gallery-heading reveal">
+          <div class="section-kicker light"><span>这是真的安工</span><i></i><b>CAMPUS, UNFILTERED</b></div>
+          <h2 id="campus-title">攻略会过期，<br /><em>生活正在发生。</em></h2>
+          <p>这些不是图库素材。是学校道路、宿舍、餐厅、军训、实训和傍晚的体育场。</p>
+        </div>
+        <div class="gallery-rail" aria-label="校园实拍照片墙">
+          <figure class="gallery-card tall"><img src="public/campus/library.webp" alt="安工图书馆剪影" loading="lazy" /><figcaption><b>图书馆</b><span>把大学的第一本书留在这里</span></figcaption></figure>
+          <figure class="gallery-card wide"><img src="public/campus/sports.webp" alt="安工运动会现场" loading="lazy" /><figcaption><b>运动会</b><span>热闹也属于大学的一部分</span></figcaption></figure>
+          <figure class="gallery-card"><img src="public/campus/dorm-building.webp" alt="行知苑学生公寓二号楼" loading="lazy" /><figcaption><b>行知苑</b><span>常学长住过的二号楼</span></figcaption></figure>
+          <figure class="gallery-card wide"><img src="public/campus/workshop.webp" alt="实训课堂红外寻迹小车" loading="lazy" /><figcaption><b>实训课</b><span>知识开始变成手里的东西</span></figcaption></figure>
+          <figure class="gallery-card tall"><img src="public/campus/sunset.webp" alt="北体育场的夕阳" loading="lazy" /><figcaption><b>北体育场</b><span>一天结束以前，再走一圈</span></figcaption></figure>
+          <figure class="gallery-card"><img src="public/campus/landmark.webp" alt="安工校园地标" loading="lazy" /><figcaption><b>校园地标</b><span>“我在安工很想你”</span></figcaption></figure>
+        </div>
+      </section>
+
+      <section class="about page-shell reveal" id="about">
+        <div class="about-photo"><img src="public/campus/square.webp" alt="安工求索广场实拍" loading="lazy" /><span>求索广场 · 摄于安工</span></div>
+        <div class="about-copy">
+          <div class="section-kicker"><span>为什么做这个</span><i></i><b>FROM YICHEN</b></div>
+          <blockquote>“我想把自己踩过的坑、核验过的资料，变成新生第一次需要时就能找到的答案。”</blockquote>
+          <p>常学长是安阳工学院2024级机械专业学生。这不是学校官方站，也不包装成“全知AI”；它更像一本会回应你的校园手册。</p>
+          <div class="about-actions"><button type="button" data-open-contact>需要个体判断，找我本人 ↗</button><a href="#questions">先自己逛逛问题库</a></div>
+        </div>
+      </section>
+
+      <section class="boundary page-shell reveal" aria-label="使用边界">
+        <div><span>01</span><strong>先解决问题</strong><p>能安全讲清的公共事实，不故意藏答案来换微信。</p></div>
+        <div><span>02</span><strong>不确定就标出来</strong><p>动态政策、宿舍分配和个体判断，以官方最新通知为准。</p></div>
+        <div><span>03</span><strong>只在需要时找真人</strong><p>付款、售后、权益和隐私问题，才进入人工承接。</p></div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="page-shell footer-grid">
+        <div class="footer-brand"><span class="brand-seal">常</span><div><strong>常学长AI</strong><p>把第一次到安工，提前过一遍。</p></div></div>
+        <div class="footer-note"><p>非学校官方 · 常学长AI V2.6正式版</p><p>知识库持续核验，动态事项请以学校最新通知为准。</p></div>
+        <button type="button" data-open-contact>联系常学长本人 <span>↗</span></button>
+      </div>
+    </footer>
+
+    <div class="mobile-dock" aria-label="移动端快捷导航">
+      <a href="#top"><span>⌂</span>首页</a><a href="#services"><span>▦</span>服务台</a><a href="#official"><span>✓</span>官方</a><button type="button" data-open-contact><span>☻</span>找本人</button>
+    </div>
+
+    <dialog class="contact-dialog" id="contactDialog">
+      <button class="dialog-close" type="button" data-close-contact aria-label="关闭">×</button>
+      <div class="dialog-copy">
+        <span class="dialog-label">HUMAN HANDOFF · 人工承接</span>
+        <h2>这个问题，<br />交给常学长本人。</h2>
+        <p>适合：需要结合学院/性别/宿舍区判断，或涉及付款、权益、售后和持续跟进的事情。</p>
+        <ul><li>添加时备注「2026新生 + 你的问题」</li><li>不要发送完整身份证、学号、银行卡或验证码</li><li>学校缴费与正式事务，仍以官方渠道为准</li></ul>
+      </div>
+      <div class="qr-card">
+        <img src="public/campus/wechat-qr.jpg" alt="常学长个人微信二维码" />
+        <strong>YICHEN 怡晨</strong><span>微信扫一扫 · 添加好友</span>
+      </div>
+    </dialog>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+    <script>
+      const categoryMeta = {
+        pre: { label: "入学前", color: "coral" }, dorm: { label: "选宿舍", color: "yellow" },
+        arrival: { label: "来报到", color: "green" }, life: { label: "校园生活", color: "blue" },
+        study: { label: "学习成长", color: "purple" }, safe: { label: "军训安全", color: "pink" }
+      };
+
+      const questions = [
+        {id:"pre-first",c:"pre",q:"收到录取通知书后，第一件事做什么？",a:"先核对录取信息，再按通知书里的官方清单建立一张待办表：认证、迎新、缴费、档案、团关系和到校交通。\n\n不要看到群聊里的二维码就急着付款，也不需要因为学长推荐先买任何手机卡。所有时间节点以录取通知书、学校迎新系统和学院通知为准。",s:"官方流程整理",k:"已核验",v:"2026-08-03",scope:"2026级通用准备",img:"gate.webp"},
+        {id:"pre-auth",c:"pre",q:"统一身份认证什么时候能用？",a:"现有资料给出的预计启用时间是 8月24日，但“预计”不等于最终通知。到时用学校正式入口尝试；如果页面时间变化，以学校或学院新通知为准。\n\n不要把账号、密码或验证码发给任何个人代操作。",s:"2026级入学指南",k:"动态待核",v:"2026-08-03",scope:"启用时间可能调整",img:"library.webp"},
+        {id:"pre-welcome",c:"pre",q:"迎新系统主要用来做什么？",a:"迎新系统一般用于新生信息确认、报到准备和相关流程办理。建议只从录取通知书、学校官网或学院通知进入，别从陌生群里的短链接登录。\n\n具体模块和开放顺序可能更新，看到的页面与旧教程不同并不一定是你操作错了。",s:"官方迎新流程",k:"已核验",v:"2026-08-03",scope:"具体页面以当年系统为准",img:"campus-road.webp"},
+        {id:"pre-pay",c:"pre",q:"学费和住宿费应该怎么交？",a:"只通过学校指定的正式缴费渠道操作，并逐项核对收款主体、项目名称和金额。私人二维码、口头代缴或“先转给我再统一办”都不建议。\n\n住宿费按房型计费：四人间1000元/生/年、六人间800元、八人间600元；实际房型以系统分配为准。",s:"2026级入学指南",k:"已核验",v:"2026-08-03",scope:"支付入口以学校最新通知为准",img:"square.webp",handoff:true},
+        {id:"pre-file",c:"pre",q:"高中档案是自己带，还是学校邮寄？",a:"档案按生源地和毕业学校要求办理，可能是密封自带，也可能由原学校统一寄送。无论哪种方式，都不要私自拆封密封档案。\n\n你可以先问高中班主任或当地招办确认交接方式，再按安工报到要求提交。",s:"报到材料规则",k:"已核验",v:"2026-08-03",scope:"不同生源地流程会有差异",img:"gate.webp"},
+        {id:"pre-group",c:"pre",q:"团关系什么时候、怎么转？",a:"团组织关系按原学校和录取学院的通知办理，线上转接与纸质材料可能都涉及。建议先保留原学校联系人和相关材料，等学院明确接收组织名称后再提交。\n\n不要凭群聊里别人成功的名称盲填，因为学院和年份不同会导致退回。",s:"报到材料规则",k:"范围有限",v:"2026-08-03",scope:"以录取学院通知为准",img:"library.webp"},
+        {id:"pre-household",c:"pre",q:"上大学必须迁户口吗？",a:"不是必须。户口迁移通常是自愿选择，需要结合你自己的升学、就业与家庭安排判断。\n\n如果决定迁，按录取通知书和当地派出所要求准备；这是个人重要事项，AI不替你做最终选择。",s:"入学政策常见口径",k:"已核验",v:"2026-08-03",scope:"个体选择，必要时咨询正式部门",img:"landmark.webp",handoff:true},
+        {id:"pre-pack",c:"pre",q:"入学行李到底带哪些最实用？",a:"先带证件材料、常用药、充电设备、换洗衣物和少量当天必需品。被褥、脸盆、衣架等大件，可以等确认床型和宿舍储物空间后再买。\n\n床铺官方标注为90×190cm；不同房型空间差异很大，别在选宿前一次买齐大型收纳。",s:"官方尺寸 + 在校经验",k:"一手经验",v:"2026-08-03",scope:"按个人生活习惯增减",img:"dorm-room.webp"},
+
+        {id:"dorm-online",c:"dorm",q:"2026级怎么线上选宿舍？",a:"可以线上选。路径是「易校园 → 绑定校园卡 → 人脸采集 → 智慧公寓 → 更多 → 选宿」，在自己学院开放时段选择宿舍和床位。\n\n各学院分批开放，每天 08:00—18:00。你最终能看到哪些楼栋、房间和床位，以系统当时显示为准。",s:"《2026级新生入学指南》",k:"已核验",v:"2026-08-03",scope:"仅适用2026级，系统通知可覆盖",img:"dorm-building.webp"},
+        {id:"dorm-date",c:"dorm",q:"我所在学院哪天选宿舍？",a:"2026级分批时间是：8/28机械与材料，8/29电子/无人机与外国语，8/30计算机与土木交通，8/31莫斯科航空与艺术，9/1飞行与化环，9/2会计、数信、文传与航空服务，9/3生物食品，9/4商学院。\n\n每天 08:00—18:00；学院名称或通知若有调整，以系统为准。",s:"《2026级新生入学指南》",k:"已核验",v:"2026-08-03",scope:"2026级分学院时间表",img:"dorm-building.webp"},
+        {id:"dorm-miss",c:"dorm",q:"错过学院选宿时间怎么办？",a:"先别慌。指南安排了 9月5—6日 08:00—18:00 的补选时段，供错过规定时间的新生处理。\n\n如果补选页面仍异常，保留不含姓名和学号的报错信息，联系学院或系统正式支持渠道，不要把账号交给陌生人代选。",s:"《2026级新生入学指南》",k:"已核验",v:"2026-08-03",scope:"2026级补选安排",img:"dorm-building.webp"},
+        {id:"dorm-roommate",c:"dorm",q:"能不能和认识的人选到同一宿舍？",a:"能否锁定同一房间，要看开放时系统是否同时显示可选床位，以及当年的具体规则。目前资料不足以保证“组队一定成功”。\n\n最稳妥的做法是提前确认同学院开放时间，同时操作；不要为了占床位共享账号密码。",s:"系统规则待核",k:"动态待核",v:"2026-08-03",scope:"以选宿页面实际规则为准",img:"dorm-room.webp"},
+        {id:"dorm-price",c:"dorm",q:"四人间、六人间多少钱？床多大？",a:"按2026级入学指南：四人间1000元/生/年、六人间800元、八人间600元；床铺标注为90×190cm。\n\n这不代表每个学院、性别和宿舍区都能自由选择全部房型，最终以易校园显示和入住现场为准。",s:"《2026级新生入学指南》",k:"已核验",v:"2026-08-03",scope:"2026级住宿口径",img:"dorm-room.webp"},
+        {id:"dorm-real",c:"dorm",q:"安工宿舍真实住着怎么样？",a:"常学长住过行知苑（三里屯）2号楼六人间：有空调、阳台和独立卫生间，洗澡去公共浴室，浴室是独立隔间；楼里有洗衣、洗鞋和饮水设备。\n\n这是一个男生楼栋的亲历，不等于女生宿舍或其他宿舍区都一样。",s:"常学长2024—2026亲历",k:"一手经验",v:"2026-08-03",scope:"仅行知苑2号楼男生六人间",img:"dorm-room.webp",handoff:true},
+        {id:"dorm-power",c:"dorm",q:"宿舍晚上会断电吗？",a:"常学长住的行知苑2号楼晚上不断电，但这只能代表该楼栋的居住经历，不能外推为全校永久规则。\n\n门禁、供电和设备维护都可能动态调整；如果你已经知道宿舍区和楼栋，再按具体范围核对更靠谱。",s:"常学长在校亲历",k:"一手经验",v:"2026-08-03",scope:"行知苑2号楼，不作全校保证",img:"dorm-study.webp"},
+        {id:"dorm-bath",c:"dorm",q:"宿舍有独卫、空调和洗澡间吗？",a:"行知苑2号楼男生六人间的亲历是：有空调、阳台、独立卫生间，但宿舍内不能洗澡，要去公共浴室；公共浴室有独立隔间。\n\n不同宿舍区、楼栋、性别的配置可能不同。具体到你的房间，只能看系统分配和现场。",s:"常学长在校亲历",k:"范围有限",v:"2026-08-03",scope:"不外推至全校宿舍",img:"dorm-room.webp",handoff:true},
+
+        {id:"arrive-material",c:"arrival",q:"报到当天最重要的材料有哪些？",a:"优先装好身份证、录取通知书、报到/查验相关材料，以及按原学校要求准备的密封档案和党团关系材料。\n\n证件原件与复印件分开放，手机里可留必要页面的离线截图；不要把完整证件照片发到新生群。",s:"2026级报到资料",k:"已核验",v:"2026-08-03",scope:"最终以通知书清单为准",img:"gate.webp"},
+        {id:"arrive-station",c:"arrival",q:"安阳站和安阳东站，有什么区别？",a:"安阳站是普通铁路车站，安阳东站主要是高铁站。买票时一定看清终点站，两个站到学校的路线和时间不同。\n\n第一次来、行李多的情况下，从安阳东站打车到校通常更省心；具体价格和时长以当天交通为准。",s:"在校交通经验",k:"一手经验",v:"2026-08-03",scope:"路况和接站安排会变化",img:"campus-road.webp"},
+        {id:"arrive-taxi",c:"arrival",q:"第一次到安工，公交还是打车？",a:"行李少、时间充足可以查当天公交；行李多或第一次辨路，打车通常更省体力。上车前确认目的地是安阳工学院，并根据自己的报到点选择合适校门。\n\n网约车价格和校内通行会变化，不建议把旧攻略里的费用当固定价。",s:"在校交通经验",k:"一手经验",v:"2026-08-03",scope:"以当天地图和交通安排为准",img:"gate.webp"},
+        {id:"arrive-volunteer",c:"arrival",q:"车站或校门口会有志愿者吗？",a:"往年迎新阶段有志愿者协助新生，但具体车站、时段和标识应以2026年学院或学校通知为准。\n\n认准统一标识，不要把行李、证件或付款操作交给身份不明的人。即使有人热心帮忙，也不需要把手机验证码告诉对方。",s:"往年迎新经验",k:"动态待核",v:"2026-08-03",scope:"2026接站安排待正式发布",img:"gate.webp"},
+        {id:"arrive-route",c:"arrival",q:"到校后的报到顺序是什么？",a:"通常先按学院指引完成身份核验和报到，再确认住宿信息、领取或办理必要物品，最后进入宿舍安顿。\n\n现场流程可能按校门、学院和宿舍区分流。先看当日指示牌与志愿者统一指引，不必执着照搬旧视频的顺序。",s:"迎新流程整理",k:"范围有限",v:"2026-08-03",scope:"以2026现场动线为准",img:"square.webp"},
+        {id:"arrive-delivery",c:"arrival",q:"能不能提前把行李快递到学校？",a:"可以考虑，但要等你确认校区、宿舍区和快递点信息后再寄。不要只写“安阳工学院”就发大件，否则可能取件很远。\n\n常学长的生活经验是快递点距离宿舍大约50—100米，但不同宿舍区会有差异。",s:"在校生活经验",k:"一手经验",v:"2026-08-03",scope:"快递点位置可能调整",img:"dorm-building.webp"},
+        {id:"arrive-date",c:"arrival",q:"2026级具体哪天报到？",a:"当前资料不足以在这里给出一个永远正确的日期。报到时间属于动态正式安排，应该以录取通知书、学校迎新系统和学院最新通知为准。\n\n不要因为短视频或群聊里的倒计时提前订不可退行程。",s:"正式日期待发布/复核",k:"动态待核",v:"2026-08-03",scope:"以录取通知书为最高依据",img:"gate.webp"},
+        {id:"arrive-parent",c:"arrival",q:"家长能进校、能在附近住吗？",a:"家长是否能进校、车辆如何通行，要看当年迎新秩序和临时管理。住宿建议围绕你实际报到校门提前查可退订房源。\n\n这类现场规则更新很快，不宜用往年口径直接承诺。出发前再看学校或学院最新通知。",s:"现场规则待核",k:"动态待核",v:"2026-08-03",scope:"迎新期间可能临时调整",img:"gate.webp"},
+
+        {id:"life-food",c:"life",q:"学校食堂一顿饭大概多少钱？",a:"按常学长个人样本：午饭常见约10元，早餐和晚餐约5元左右；实际会随食量、窗口和菜品变化。\n\n行知苑餐厅有自选菜等多种餐型。把这个当生活预算参考，不是全校统一定价。",s:"常学长在校消费样本",k:"一手经验",v:"2026-08-03",scope:"个人样本，价格会变",img:"meal.webp"},
+        {id:"life-budget",c:"life",q:"一个月生活费准备多少合适？",a:"常见参考区间是每月1000—1500元，但差异主要来自外卖、购物、出行和社交，不是一个“标准答案”。\n\n可以先按餐费、日用品、交通、通讯和机动金分开记账，第一个月观察自己的真实开销，再调整。",s:"在校生活样本",k:"一手经验",v:"2026-08-03",scope:"个人消费差异较大",img:"canteen.webp"},
+        {id:"life-delivery",c:"life",q:"宿舍附近取快递、点外卖方便吗？",a:"常学长生活范围内，快递点离宿舍大约50—100米；外卖一般送到校门或指定点，需要自己去取。\n\n不同宿舍区和平台规则会变化。下单时看清配送点，不要默认骑手能送到宿舍楼下。",s:"常学长在校亲历",k:"一手经验",v:"2026-08-03",scope:"具体取件点以现场为准",img:"dorm-building.webp"},
+        {id:"life-shop",c:"life",q:"校内买日用品方便吗？",a:"基础日用品和常见生活补给一般能在校内或周边解决，不必开学前把四年用品一次带齐。\n\n先过一两天真实宿舍生活，再买收纳、插座等容易买错尺寸的东西；涉及电器功率，要先看宿舍管理要求。",s:"在校生活经验",k:"一手经验",v:"2026-08-03",scope:"商户和商品会变化",img:"campus-road.webp"},
+        {id:"life-net",c:"life",q:"校园网速度怎么样？",a:"常学长的体验是校园网约100Mbps，有线下载速度曾达到约10MB/s，但楼栋、时段、设备和套餐都会影响体验。\n\n这只能作为亲历参考，不是对每个宿舍的测速承诺。刚到校不必因为销售话术立即办长期套餐。",s:"常学长网络使用体验",k:"一手经验",v:"2026-08-03",scope:"速度因位置和时段变化",img:"dorm-study.webp"},
+        {id:"life-card",c:"life",q:"不办学长推荐的手机卡，会影响报到吗？",a:"不会。是否购买某张手机卡，不应影响入学报到、上课和基本校园生活。手机通信套餐、校园网和校园卡是不同的东西。\n\n先看清运营商、月租、合约期、注销方式和赠送条件，再决定；任何“今天不办就不能用校园服务”的说法都要警惕。",s:"官方边界 + 消费提醒",k:"已核验",v:"2026-08-03",scope:"不为任何通信套餐背书",img:"campus-road.webp"},
+        {id:"life-difference",c:"life",q:"校园卡、手机卡、校园网是一回事吗？",a:"不是。校园卡用于校内身份或消费等场景；手机卡是运营商通信服务；校园网是学校网络接入。它们可能在办理活动中被一起介绍，但功能和合同主体不同。\n\n判断一项服务是否需要，先问清“谁收费、买了什么、不买会怎样、如何取消”。",s:"服务边界整理",k:"已核验",v:"2026-08-03",scope:"具体办理规则以官方说明为准",img:"library.webp"},
+        {id:"life-bike",c:"life",q:"新生能骑电动车进校园吗？",a:"2025年以后学校对电动车入校管理趋严，但2026年具体准入、登记和停放规则仍需以最新通知为准。\n\n最稳妥的做法是先别急着买，入校后确认宿舍距离、充电条件和当年规则，再决定是否需要。",s:"校园管理动态信息",k:"动态待核",v:"2026-08-03",scope:"2026具体规则待核",img:"campus-road.webp"},
+
+        {id:"study-load",c:"study",q:"机械专业一周大概多少课？",a:"常学长机械专业的个人体验约每周15节课，但不同年级、学期和专业培养方案会变化。\n\n大学课表不像高中每天固定排满，空课不等于没任务；预习、作业、实验和项目通常要自己安排。",s:"常学长机械专业亲历",k:"一手经验",v:"2026-08-03",scope:"不外推至其他专业和学期",img:"workshop.webp"},
+        {id:"study-evening",c:"study",q:"晚上必须上晚自习吗？",a:"常学长所在机械专业没有统一强制晚自习的个人经历，但不同学院、年级和培养安排可能不一样。\n\n如果你的辅导员或学院发布明确要求，以本学院通知为准。不要把学长的经历当成学校永久规则。",s:"常学长个人经历",k:"范围有限",v:"2026-08-03",scope:"仅个人专业经历",img:"dorm-study.webp"},
+        {id:"study-morning",c:"study",q:"每天早上要跑操吗？",a:"常学长本人没有统一早操的经历，但不能据此保证所有学院、年级和学期都没有。\n\n体育打卡、课程安排或学院活动可能采用不同形式。入学后看自己的课表与辅导员通知最准确。",s:"常学长个人经历",k:"范围有限",v:"2026-08-03",scope:"不作全校保证",img:"sports.webp"},
+        {id:"study-library",c:"study",q:"图书馆好用吗？期末有座位吗？",a:"图书馆是适合长期学习的空间，但期末等高峰期会更拥挤。可以早点到，也可以准备一两个教学楼或自习室备选。\n\n不要用物品长期占座；具体开放时间、预约方式和考试周安排，以图书馆当期通知为准。",s:"在校学习经验",k:"一手经验",v:"2026-08-03",scope:"开放安排动态变化",img:"library.webp"},
+        {id:"study-club",c:"study",q:"社团到底要不要多报几个？",a:"不用追求数量。先想清楚你想交朋友、锻炼技能还是积累作品，再选一到两个真正愿意持续投入的。\n\n招新时重点问活动频率、时间成本、是否收费和退出方式。大一留一点空白，比把每个晚上都排满更重要。",s:"在校成长经验",k:"一手经验",v:"2026-08-03",scope:"建议性质，按个人目标选择",img:"sports.webp"},
+        {id:"study-sport",c:"study",q:"学校里平时有哪些运动和活动？",a:"校园里有体育场、运动会和不同类型的学生社团活动。具体场地开放、项目和招新时间每年会变。\n\n如果你有明确项目需求，入校后看社团招新与体育场公告；先体验，再决定是否购买长期装备。",s:"校园实拍 + 在校经历",k:"一手经验",v:"2026-08-03",scope:"活动安排以当期通知为准",img:"sports.webp"},
+        {id:"study-practice",c:"study",q:"工科会有动手实训吗？",a:"会有实践与实训场景。常学长的素材里包括红外寻迹小车等课堂实践，但具体项目由专业、课程和老师安排。\n\n不要把一个课程作品理解成所有新生都会做；更重要的是持续保存过程照片、代码和总结，它们会成为你的作品集。",s:"常学长工科实训经历",k:"一手经验",v:"2026-08-03",scope:"不同专业课程差异明显",img:"workshop.webp"},
+        {id:"study-roommate",c:"study",q:"和室友相处不好，刚开学怎么办？",a:"先把作息、卫生、灯光、声音和公共物品这五件事说清楚，尽量讨论具体行为，而不是给人贴标签。\n\n如果长期冲突、影响安全或无法自行协调，及时找辅导员或宿管。AI可以帮你整理表达，但不替正式人员处理纠纷。",s:"新生适应建议",k:"建议",v:"2026-08-03",scope:"涉及安全时立即找正式人员",img:"dorm-study.webp",handoff:true},
+
+        {id:"safe-days",c:"safe",q:"2026军训到底多少天？",a:"现在还不能确定。现有2026官方指南确认了军训服价格和无捆绑销售，但没有给出2026军训具体日期与时长。\n\n常学长2024级当时大约训了21天，只能作为往届体验，不能拿来替2026做结论。等学院或学校发布正式安排后再确认。",s:"官方指南 + 2024亲历",k:"动态待核",v:"2026-08-03",scope:"2024经历不可外推至2026",img:"military.webp"},
+        {id:"safe-clothes",c:"safe",q:"军训服多少钱？还有别的费用吗？",a:"2026级入学指南写明军训服每套89元，并注明不存在其他捆绑销售。付款时看清正式通知、收款主体和项目。\n\n如果现场出现与指南不同的说法，先别急着付款，保留页面或通知截图，再向学院或学校正式渠道核实。",s:"《2026级新生入学指南》",k:"已核验",v:"2026-08-03",scope:"军训服官方口径",img:"military.webp"},
+        {id:"safe-bundle",c:"safe",q:"不办手机卡，是不是不能买军训服？",a:"不是。2026级指南明确注明军训服不存在其他捆绑销售，办不办手机卡都不应成为购买或领取军训服的前提。\n\n遇到捆绑话术，先问清销售主体和书面规则，不向私人账户匆忙转账。",s:"《2026级新生入学指南》",k:"已核验",v:"2026-08-03",scope:"不提供私人收款入口",img:"military.webp",handoff:true},
+        {id:"safe-pack",c:"safe",q:"军训最值得提前准备什么？",a:"常学长的实用清单是：防晒、大容量水杯、合脚鞋袜、吸汗衣物和合适鞋垫；再按正式通知准备服装。\n\n不要囤太多所谓“军训神器”。先保证防晒、补水、睡眠和脚部舒适，身体不适及时报告。",s:"常学长军训亲历",k:"一手经验",v:"2026-08-03",scope:"个人建议，遵从教官和医生要求",img:"military.webp"},
+        {id:"safe-unwell",c:"safe",q:"军训时身体不舒服怎么办？",a:"立即停止硬撑，向教官、辅导员或现场医护说明情况。涉及既往病史、过敏或用药，按学校要求提前准备必要证明和药物。\n\n聊天页面不能诊断身体问题；出现严重或紧急症状，优先联系120、校内正式人员和家长。",s:"安全处置原则",k:"需正式处理",v:"2026-08-03",scope:"健康问题不由AI诊断",img:"military.webp",handoff:true},
+        {id:"safe-pay",c:"safe",q:"已经付款但没收到东西，怎么办？",a:"先不要重复付款，保留订单、支付时间、金额和对方承诺的截图；不要发送银行卡号、验证码或完整身份证。\n\n这类问题需要真人核对，我不能替任何一方判责，也不能先承诺退款。如果属于学校费用，优先在学校统一支付平台和正式渠道查账。",s:"人工接管规则",k:"需人工",v:"2026-08-03",scope:"支付与履约纠纷",img:"canteen.webp",handoff:true},
+        {id:"safe-private",c:"safe",q:"把身份证和通知书发来，能帮我检查吗？",a:"先不要发完整证件。姓名、身份证号、考生号、二维码和住址都请遮住；核对材料通常不需要这些信息。\n\n你可以只提供“材料名称”的文字清单。涉及身份查验、账号激活或系统认证，请直接走学校正式入口。",s:"隐私最小化原则",k:"隐私提醒",v:"2026-08-03",scope:"不接收或保存完整证件",img:"gate.webp"},
+        {id:"safe-urgent",c:"safe",q:"遇到诈骗、威胁或紧急情况找谁？",a:"先确保人身安全，保留证据，不继续转账或与对方纠缠。紧急情况拨打110或120，同时联系辅导员、宿管、保卫等学校正式人员和家长。\n\n常学长可以帮助整理经过，但不能替代警方、医疗和学校正式处置。",s:"紧急事件分流原则",k:"立即转正式渠道",v:"2026-08-03",scope:"人身与财产安全优先",img:"campus-road.webp",handoff:true},
+        {id:"pre-green",c:"pre",q:"学费暂时没凑齐，还能报到吗？",a:"如果家庭经济特别困难、暂时筹不齐学费和住宿费，不要因为害怕就放弃报到。学校公开问答说明，可在报到时通过“绿色通道”先办理入学手续，再按实际情况衔接困难认定与资助。\n\n绿色通道不等于自动免学费。请提前查看学校学生资助和学院通知，只提交真实材料，不碰陌生贷款与所谓保证金。",s:"审核作品第41篇 + 学校公开问答",k:"官方信息整理",v:"2026-08-12",scope:"具体材料以资助部门最新通知为准",img:"gate.webp",handoff:true},
+        {id:"pre-aid",c:"pre",q:"安工新生可以申请哪些资助？",a:"已审核资料归纳的资助路径包括：服兵役高等学校学生国家教育资助、助学贷款、奖学金、国家助学金、勤工助学、绿色通道和企业奖助学金。\n\n它们不是人人都能全部叠加获得；资格、金额、评审年级和材料以学校当期资助通知为准。新生阶段可优先了解助学贷款、绿色通道和家庭经济困难认定。",s:"审核作品第96篇 + 2026入学指南",k:"官方信息整理",v:"2026-08-13",scope:"不承诺任何个人必然获得资助",img:"library.webp",handoff:true},
+        {id:"dorm-bed",c:"dorm",q:"选宿舍时，床位怎么挑更实用？",a:"先看自己更在意上下床、采光、离门远近还是离空调的位置，再结合房间实际可选床位决定。靠门可能更吵，靠窗可能更亮；没有一种床位对所有人都最好。\n\n系统里能否查看完整布局以实际页面为准。不要为了抢所谓“黄金床位”把账号密码交给别人。",s:"审核作品第30篇",k:"一手经验",v:"2026-08-12",scope:"宿舍布局与个人习惯不同",img:"dorm-room.webp"},
+        {id:"dorm-power-strip",c:"dorm",q:"宿舍插排、床帘和床垫怎么选？",a:"先确认床铺90×190cm只是指南标注尺寸，入住后再量床架、护栏和插座位置。床帘、床垫与收纳不必开学前一次买齐。\n\n插排要选择合格产品，功率和使用方式服从宿舍消防与用电规定；不要购买来源不明的改装插排或大功率电器。",s:"审核作品第35/37/72/75篇",k:"经验整理",v:"2026-08-12",scope:"现场尺寸和宿舍规定优先",img:"dorm-room.webp"},
+        {id:"arrive-id",c:"arrival",q:"身份证丢了，还能去报到吗？",a:"先尽快到当地公安机关补办。学校2026公开问答说明，如果报到时新证仍没办好，可按当地公安机关与录取学院要求准备身份证明，先办理相关手续，拿到新证后继续完成身份核验。\n\n出发前联系录取学院确认所需证明。补证只走公安机关正式渠道，不在群里公开证件号和完整照片。",s:"审核作品第46篇 + 学校公开问答",k:"官方信息整理",v:"2026-08-12",scope:"证明形式以公安机关和学院答复为准",img:"gate.webp",handoff:true},
+        {id:"arrive-campus",c:"arrival",q:"主校区和洹滨校区，怎么确认去哪个？",a:"先看录取通知书与2026级入学指南确认报到校区，再根据到达车站、行李和实时导航选择路线。不要只凭专业群里的旧截图判断。\n\n公交线路、站点与接站安排都可能变化；出发当天重新核对地图和学校通知。晚到或行李多时，优先考虑安全和体力。",s:"审核作品第69/94篇",k:"动态待核",v:"2026-08-13",scope:"校区以通知书与学院通知为准",img:"campus-road.webp"},
+        {id:"life-receipt",c:"life",q:"缴费后的电子票据在哪里查？",a:"先在学校统一支付平台确认订单状态和金额，再通过学校正式财务渠道查找电子票据入口，核对姓名、项目、金额和日期后下载保存。\n\n支付成功与票据更新不一定同时发生，刚付完没看到不要重复缴费。求助截图要遮住姓名、学号、订单号和票据代码。",s:"审核作品第68篇 + 2026入学指南",k:"官方流程整理",v:"2026-08-12",scope:"菜单名称以2026实际页面为准",img:"library.webp",handoff:true},
+        {id:"life-ticket",c:"life",q:"录取通知书能买新生学生票吗？",a:"按入学指南和铁路现行口径，新生可凭录取通知书购买开学前从家庭居住地到学校所在地的单程学生优惠票。能否下单仍受12306预售期、余票和可售席别影响。\n\n购票和进站时准备本人有效身份证件与录取通知书原件；价格及核验规则以铁路12306最新页面和车站执行为准。",s:"审核作品第88篇 + 铁路12306",k:"官方信息整理",v:"2026-08-12",scope:"铁路规则变化时以12306为准",img:"campus-road.webp"},
+        {id:"study-major",c:"study",q:"录取专业不满意，入学后能转专业吗？",a:"可以申请，但不是开学就换，也没有人能保证成功。学校公开规则显示，新生先正常报到，在规定时间向学院提出申请，再按转出、接收计划、资格和考核等流程处理。\n\n2026具体时间、名额和限制要等当年通知。现在可先了解目标专业培养方案，保持成绩与纪律，警惕任何“交钱包转”的说法。",s:"审核作品第47篇 + 转专业管理办法",k:"动态待核",v:"2026-08-12",scope:"申请结果不作承诺",img:"workshop.webp",handoff:true},
+        {id:"study-books",c:"study",q:"大一教材费怎么收，要提前买书吗？",a:"2026级指南说明，大一上学期教材统一征订，领取后以班为单位据实结算；官方没有给所有新生统一固定金额。\n\n教材费与学费、住宿费、军训服不是同一笔钱。等待学院或班级正式清单，核对专业、课程、书名和数量，不要照网上旧书单提前整套买齐。",s:"审核作品第89篇 + 2026入学指南",k:"已核验",v:"2026-08-12",scope:"清单与结算时间以正式通知为准",img:"library.webp"},
+        {id:"safe-loan",c:"safe",q:"助学贷款回执码应该在哪里填？",a:"按2026级指南，迎新系统里有“绿色通道”可选模块。已办理生源地贷款的新生，等系统开放后在该模块按实际页面填写贷款回执编码等信息。\n\n回执码不是学号或身份证号，不要照抄教程示例，也不要发给陌生人代填。系统未开放时先保存好受理证明与回执信息。",s:"审核作品第90篇 + 2026入学指南",k:"官方流程整理",v:"2026-08-12",scope:"实际字段以迎新系统页面为准",img:"library.webp",handoff:true},
+        {id:"safe-review",c:"safe",q:"入学复查会查什么，是重新考试吗？",a:"入学后会进行资格审查与复查，但不等于重新高考，也不能把其他学校的体检或考试清单直接套到安工。指南确认报到时有资格初步审查，入学后三个月内按国家招生规定复查。\n\n最重要的是材料真实、信息一致。具体项目与时间等待学校后续正式通知，不借用、修改或伪造证明材料。",s:"审核作品第92篇 + 2026入学指南",k:"已核验",v:"2026-08-12",scope:"复查项目以正式通知为准",img:"workshop.webp"}
+      ];
+
+      const grid = document.getElementById("questionGrid");
+      const emptyState = document.getElementById("emptyState");
+      const tabs = document.getElementById("categoryTabs");
+      const searchInput = document.getElementById("librarySearch");
+      const chatBody = document.getElementById("chatBody");
+      const dialog = document.getElementById("contactDialog");
+      const loadMoreButton = document.getElementById("loadMoreButton");
+      let currentFilter = "pre";
+      let visibleLimit = 12;
+      let streamTimer = null;
+      let filterTimer = null;
+
+      function escapeHTML(value) {
+        return value.replace(/[&<>'"]/g, char => ({"&":"&amp;","<":"&lt;",">":"&gt;","'":"&#039;",'"':"&quot;"}[char]));
+      }
+
+      function renderQuestions() {
+        const term = searchInput.value.trim().toLowerCase();
+        const visible = questions.filter(item => (currentFilter === "all" || item.c === currentFilter) && (!term || (item.q + item.a + item.s).toLowerCase().includes(term)));
+        const rendered = visible.slice(0, visibleLimit);
+        grid.innerHTML = rendered.map((item, index) => {
+          const meta = categoryMeta[item.c];
+          return `<button class="question-card ${meta.color}" type="button" data-question="${item.id}" style="--delay:${Math.min(index, 12) * 35}ms">
+            <span class="question-category">${meta.label}</span><span class="question-number">${String(questions.indexOf(item)+1).padStart(2,"0")}</span>
+            <strong>${escapeHTML(item.q)}</strong><small>${escapeHTML(item.k)} · ${escapeHTML(item.s)}</small><i>看回答 ↗</i>
+          </button>`;
+        }).join("");
+        emptyState.hidden = visible.length > 0;
+        loadMoreButton.hidden = visible.length <= visibleLimit;
+        if (!loadMoreButton.hidden) loadMoreButton.innerHTML = `继续加载 ${Math.min(12, visible.length - visibleLimit)} 个问题 <span>↓</span>`;
+        const kbd = document.querySelector(".library-search kbd"); if (kbd) kbd.textContent = visible.length;
+      }
+
+      function animateQuestionFilter() {
+        clearTimeout(filterTimer);
+        grid.classList.remove("is-entering");
+        grid.classList.add("is-filtering");
+        filterTimer = setTimeout(() => {
+          renderQuestions();
+          grid.classList.remove("is-filtering");
+          void grid.offsetWidth;
+          grid.classList.add("is-entering");
+          setTimeout(() => grid.classList.remove("is-entering"), 900);
+        }, 170);
+      }
+
+      function findQuestion(text) {
+        const clean = text.trim().toLowerCase();
+        if (!clean) return null;
+        const exact = questions.find(item => item.q.includes(clean) || clean.includes(item.q.replace(/[？?]/g,"")));
+        if (exact) return exact;
+        const keywords = clean.split(/[\s，。！？、,.!?]+/).filter(word => word.length >= 2);
+        let best = null, score = 0;
+        for (const item of questions) {
+          const haystack = item.q + item.a;
+          const nextScore = keywords.reduce((sum, word) => sum + (haystack.includes(word) ? word.length : 0), 0);
+          if (nextScore > score) { best = item; score = nextScore; }
+        }
+        return score >= 2 ? best : null;
+      }
+
+      function addUserMessage(text) {
+        const wrapper = document.createElement("div");
+        wrapper.className = "message user-message";
+        wrapper.innerHTML = `<div class="message-content"><p>${escapeHTML(text)}</p></div>`;
+        chatBody.appendChild(wrapper);
+      }
+
+      function statusClass(status) {
+        if (status.includes("核验")) return "verified";
+        if (status.includes("经验") || status.includes("建议")) return "experience";
+        if (status.includes("人工") || status.includes("正式") || status.includes("隐私")) return "human";
+        return "pending";
+      }
+
+      function streamAnswer(item) {
+        clearInterval(streamTimer);
+        const wrapper = document.createElement("div");
+        wrapper.className = "message assistant-message answer-message";
+        wrapper.innerHTML = `<div class="message-avatar">常</div><div class="message-content">
+          <div class="thinking"><span></span><span></span><span></span><b>正在查找对应资料</b></div>
+          <div class="answer-layout" hidden>
+            <div class="answer-text"><p class="stream-text"></p><span class="stream-cursor">▋</span></div>
+            <img class="answer-image" src="public/campus/${item.img}" alt="与回答相关的安工校园实拍" />
+          </div>
+          <div class="answer-meta" hidden><span class="status ${statusClass(item.k)}">${escapeHTML(item.k)}</span><p><strong>${escapeHTML(item.s)}</strong><small>核验 ${item.v} · ${escapeHTML(item.scope)}</small></p></div>
+          ${item.handoff ? `<button class="inline-handoff" type="button" data-open-contact>这个问题需要本人继续判断 <span>↗</span></button>` : ""}
+          <div class="answer-feedback" hidden><span>这个回答有帮助吗？</span><button type="button" data-feedback="yes">有帮助</button><button type="button" data-feedback="no">还不够</button></div>
+        </div>`;
+        chatBody.appendChild(wrapper);
+        chatBody.scrollTop = chatBody.scrollHeight;
+        const thinking = wrapper.querySelector(".thinking");
+        const layout = wrapper.querySelector(".answer-layout");
+        const output = wrapper.querySelector(".stream-text");
+        const cursor = wrapper.querySelector(".stream-cursor");
+        const meta = wrapper.querySelector(".answer-meta");
+        const feedback = wrapper.querySelector(".answer-feedback");
+        const handoff = wrapper.querySelector(".inline-handoff"); if (handoff) handoff.hidden = true;
+        setTimeout(() => {
+          thinking.remove(); layout.hidden = false;
+          let index = 0;
+          streamTimer = setInterval(() => {
+            const size = /[，。！？；\n]/.test(item.a[index] || "") ? 1 : 2;
+            index = Math.min(item.a.length, index + size);
+            output.textContent = item.a.slice(0, index);
+            chatBody.scrollTop = chatBody.scrollHeight;
+            if (index >= item.a.length) {
+              clearInterval(streamTimer); cursor.remove(); meta.hidden = false; feedback.hidden = false; if (handoff) handoff.hidden = false;
+              chatBody.scrollTop = chatBody.scrollHeight;
+            }
+          }, 23);
+        }, 620);
+      }
+
+      function ask(item, text = item.q) {
+        document.getElementById("assistant").scrollIntoView({behavior:"smooth", block:"start"});
+        setTimeout(() => { addUserMessage(text); streamAnswer(item); }, 380);
+      }
+
+      function askFreeText(text) {
+        const item = findQuestion(text);
+        if (item) return ask(item, text);
+        const fallback = {q:text,a:"这个说法暂时没有匹配到问题库里的确定答案。你可以换成“宿舍、选宿、报到、军训、校园网、手机卡、食堂、课程”等关键词再问。\n\n如果它涉及你个人的学院、性别、楼栋、付款或权益，我建议交给常学长本人结合上下文判断，而不是让我编一个看起来像答案的答案。",s:"V2.6新生问题库",k:"需人工",v:"2026-08-12",scope:"未匹配问题不自动生成",img:"campus-road.webp",handoff:true};
+        ask(fallback, text);
+      }
+
+      document.addEventListener("click", event => {
+        const questionButton = event.target.closest("[data-question]");
+        if (questionButton) { const item = questions.find(q => q.id === questionButton.dataset.question); if (item) ask(item); }
+        const categoryButton = event.target.closest("[data-category]");
+        if (categoryButton) {
+          currentFilter = categoryButton.dataset.category; searchInput.value = ""; visibleLimit = 12;
+          tabs.querySelectorAll("button").forEach(button => { const selected = button.dataset.filter === currentFilter; button.classList.toggle("active", selected); button.setAttribute("aria-selected", String(selected)); });
+          animateQuestionFilter(); document.getElementById("questions").scrollIntoView({behavior:"smooth"});
+        }
+        const filterButton = event.target.closest("[data-filter]");
+        if (filterButton && filterButton.dataset.filter !== currentFilter) { currentFilter = filterButton.dataset.filter; visibleLimit = window.matchMedia("(max-width: 820px)").matches ? 12 : 24; tabs.querySelectorAll("button").forEach(button => { const selected = button === filterButton; button.classList.toggle("active", selected); button.setAttribute("aria-selected", String(selected)); }); animateQuestionFilter(); }
+        if (event.target.closest("#loadMoreButton")) { visibleLimit += 12; animateQuestionFilter(); }
+        if (event.target.closest("[data-open-contact]")) { if (typeof dialog.showModal === "function") dialog.showModal(); else dialog.setAttribute("open",""); }
+        if (event.target.closest("[data-close-contact]")) dialog.close();
+        const feedback = event.target.closest("[data-feedback]");
+        if (feedback) { feedback.parentElement.querySelectorAll("button").forEach(button => button.disabled = true); showToast(feedback.dataset.feedback === "yes" ? "收到，谢谢你的反馈。" : "收到，问题库会继续补齐这个问题。" ); }
+      });
+
+      document.getElementById("heroForm").addEventListener("submit", event => { event.preventDefault(); const input = document.getElementById("heroInput"); if (input.value.trim()) { askFreeText(input.value); input.value = ""; } });
+      document.getElementById("chatForm").addEventListener("submit", event => { event.preventDefault(); const input = document.getElementById("chatInput"); if (input.value.trim()) { askFreeText(input.value); input.value = ""; } });
+      searchInput.addEventListener("input", () => { visibleLimit = 12; animateQuestionFilter(); });
+      dialog.addEventListener("click", event => { if (event.target === dialog) dialog.close(); });
+
+      function showToast(message) { const toast = document.getElementById("toast"); toast.textContent = message; toast.classList.add("show"); setTimeout(() => toast.classList.remove("show"), 2200); }
+
+      const observer = new IntersectionObserver(entries => entries.forEach(entry => { if (entry.isIntersecting) { entry.target.classList.add("visible"); observer.unobserve(entry.target); } }), {threshold:.12, rootMargin:"0px 0px -5%"});
+      document.querySelectorAll(".reveal").forEach(element => observer.observe(element));
+      const heroVisual = document.querySelector(".hero-visual");
+      if (heroVisual && window.matchMedia("(pointer:fine) and (prefers-reduced-motion:no-preference)").matches) {
+        heroVisual.addEventListener("pointermove", event => {
+          const rect = heroVisual.getBoundingClientRect();
+          heroVisual.style.setProperty("--pointer-x", `${((event.clientX - rect.left) / rect.width - .5) * 16}px`);
+          heroVisual.style.setProperty("--pointer-y", `${((event.clientY - rect.top) / rect.height - .5) * 14}px`);
+        });
+        heroVisual.addEventListener("pointerleave", () => { heroVisual.style.setProperty("--pointer-x", "0px"); heroVisual.style.setProperty("--pointer-y", "0px"); });
+      }
+      let scrollTicking = false;
+      function updateScene() {
+        const scrollY = window.scrollY;
+        document.body.classList.toggle("scrolled", scrollY > 18);
+        if (heroVisual) heroVisual.style.setProperty("--scene-y", `${Math.min(scrollY, 640)}px`);
+        scrollTicking = false;
+      }
+      window.addEventListener("scroll", () => { if (!scrollTicking) { requestAnimationFrame(updateScene); scrollTicking = true; } }, {passive:true});
+      requestAnimationFrame(() => { document.body.classList.add("page-ready"); updateScene(); });
+      renderQuestions();
+    </script>
+  </body>
+</html>
