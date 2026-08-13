@@ -4,11 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#f4f0e7" />
-    <meta name="description" content="常学长AI V2.6正式版：安阳工学院2026级新生的移动端校园服务门户，官方入口、60个高频问题、校园实拍与即时回答。" />
+    <meta name="description" content="常学长AI V2.7正式版：安阳工学院2026级新生的移动端校园服务门户，官方入口、72个有来源的高频问题、校园实拍与即时回答。" />
     <meta property="og:title" content="常学长AI｜安工2026新生生活指南" />
     <meta property="og:description" content="把第一次到安工，提前过一遍。" />
     <meta property="og:image" content="public/og-v2.png" />
-    <title>常学长AI V2.6正式版｜安工2026新生服务门户</title>
+    <title>常学长AI V2.7正式版｜安工2026新生服务门户</title>
     <link rel="stylesheet" href="app/globals.css" />
   </head>
   <body>
@@ -16,7 +16,7 @@
     <header class="site-header">
       <a class="brand" href="#top" aria-label="返回首页">
         <img class="brand-avatar" src="public/avatar-v25.webp" alt="常学长防伪头像" />
-        <span><strong>常学长AI <i>V2.6</i></strong><small>安工新生服务门户</small></span>
+        <span><strong>常学长AI <i>V2.7</i></strong><small>安工新生服务门户</small></span>
       </a>
       <nav class="desktop-nav" aria-label="主导航">
         <a href="#services">服务台</a>
@@ -32,7 +32,7 @@
     <main id="top">
       <section class="hero page-shell">
         <div class="hero-copy reveal">
-          <div class="eyebrow"><span>2026 FRESHMAN PORTAL · V2.6</span><i></i><span>非学校官方</span></div>
+          <div class="eyebrow"><span>2026 FRESHMAN PORTAL · V2.7</span><i></i><span>非学校官方</span></div>
           <h1>把第一次到安工，<br /><em>提前过一遍。</em></h1>
           <p class="hero-lead">从选宿、报到到军训和第一顿饭，先用真实资料与在校经历回答；不确定的，明确告诉你不确定。</p>
           <form class="hero-ask" id="heroForm">
@@ -48,7 +48,7 @@
             <button type="button" data-question="safe-days">军训多久</button>
           </div>
           <div class="hero-stats">
-            <div><strong id="questionCount">60</strong><span>个真实问题</span></div>
+            <div><strong id="questionCount">72</strong><span>个有来源的问题</span></div>
             <div><strong>14</strong><span>组校园实拍</span></div>
             <div><strong>0</strong><span>次强制注册</span></div>
           </div>
@@ -97,7 +97,7 @@
               <img src="public/icons/map.webp" alt="校园地图入口图标" /><span><strong>VR逛校园</strong><small>360°云游安工</small></span><b>↗</b>
             </a>
             <button class="service-tile tile-cream" type="button" data-category="pre">
-              <img src="public/icons/guide.webp" alt="新生指南入口图标" /><span><strong>新生必看</strong><small>入学前8件事</small></span><b>→</b>
+              <img src="public/icons/guide.webp" alt="新生指南入口图标" /><span><strong>新生必看</strong><small>入学前12个问题</small></span><b>→</b>
             </button>
             <button class="service-tile tile-green" type="button" data-question="dorm-online">
               <img src="public/icons/dorm.webp" alt="宿舍选宿入口图标" /><span><strong>线上选宿</strong><small>流程与时间表</small></span><b>→</b>
@@ -183,7 +183,7 @@
           <div class="assistant-intro reveal">
             <div class="section-kicker light"><span>常学长即时问答</span><i></i><b>CURATED ANSWERS · CLEAR SOURCES</b></div>
             <h2 id="assistant-title">像问学长一样问，<br />但每句话都有边界。</h2>
-            <p>从60个经过整理的真实问题中匹配回答，并清楚标出来源、核验时间与适用范围；涉及动态政策和个人事项时，会提醒你进一步复核。</p>
+            <p>从72个经过整理的真实问题中匹配回答，并清楚标出来源、核验时间与适用范围；涉及动态政策和个人事项时，会提醒你进一步复核。</p>
             <div class="trust-list">
               <div><span class="trust-symbol official">✓</span><p><strong>官方资料</strong><small>给出处、日期和适用范围</small></p></div>
               <div><span class="trust-symbol experience">◎</span><p><strong>一手经历</strong><small>不把一个人的宿舍说成全校</small></p></div>
@@ -193,7 +193,7 @@
 
           <div class="chat-window reveal" id="chatWindow">
             <div class="chat-topbar">
-              <div class="chat-person"><img src="public/avatar-v25.webp" alt="常学长防伪头像" /><span><strong>常学长AI</strong><small><i></i>V2.6 新生问答库在线</small></span></div>
+              <div class="chat-person"><img src="public/avatar-v25.webp" alt="常学长防伪头像" /><span><strong>常学长AI</strong><small><i></i>V2.7 新生问答库在线</small></span></div>
               <span class="chat-mode">即时回答</span>
             </div>
             <div class="chat-body" id="chatBody" aria-live="polite">
@@ -213,28 +213,28 @@
             </div>
             <form class="chat-composer" id="chatForm">
               <label class="sr-only" for="chatInput">问常学长AI</label>
-              <input id="chatInput" autocomplete="off" placeholder="从60个问题里问一句…" />
+              <input id="chatInput" autocomplete="off" placeholder="从72个问题里问一句…" />
               <button type="submit"><span>发送</span><b>↑</b></button>
             </form>
-            <p class="composer-note">V2.6 正式版 · 回答附来源与适用范围 · 请勿输入身份证、学号或银行卡信息</p>
+            <p class="composer-note">V2.7 正式版 · 回答附来源与适用范围 · 请勿输入身份证、学号或银行卡信息</p>
           </div>
         </div>
       </section>
 
       <section class="question-library page-shell" id="questions" aria-labelledby="questions-title">
-        <div class="section-kicker reveal"><span>真实问题库</span><i></i><b>60 QUESTIONS · 97 POSTS REVIEWED</b></div>
+        <div class="section-kicker reveal"><span>真实问题库</span><i></i><b>72 QUESTIONS · 97 POSTS REVIEWED</b></div>
         <div class="section-heading library-heading reveal">
-          <div><h2 id="questions-title">新生真正会问的，<br />都摊开给你看。</h2><p>已交叉参考启动包知识库与97篇审核作品；内容经验与官方事实分开标注，不用你提前知道“该问什么”。</p></div>
-          <label class="library-search"><span>⌕</span><input id="librarySearch" placeholder="搜索：宿舍、军训、校园网…" /><kbd>60</kbd></label>
+          <div><h2 id="questions-title">新生真正会问的，<br />都摊开给你看。</h2><p>已交叉参考2026官方材料、常学长一手语料与97篇审核作品；经验和官方事实分开标注，不用你提前知道“该问什么”。</p></div>
+          <label class="library-search"><span>⌕</span><input id="librarySearch" placeholder="搜索全部问题：宿舍、军训、校园网…" /><kbd>72</kbd></label>
         </div>
         <div class="category-tabs reveal" id="categoryTabs" role="tablist" aria-label="问题分类">
-          <button type="button" data-filter="all" aria-selected="false">全部 <span>60</span></button>
-          <button class="active" type="button" data-filter="pre" aria-selected="true">入学前 <span>10</span></button>
-          <button type="button" data-filter="dorm" aria-selected="false">选宿舍 <span>10</span></button>
-          <button type="button" data-filter="arrival" aria-selected="false">来报到 <span>10</span></button>
-          <button type="button" data-filter="life" aria-selected="false">校园生活 <span>10</span></button>
-          <button type="button" data-filter="study" aria-selected="false">学习成长 <span>10</span></button>
-          <button type="button" data-filter="safe" aria-selected="false">军训安全 <span>10</span></button>
+          <button type="button" data-filter="all" aria-selected="false">全部 <span>72</span></button>
+          <button class="active" type="button" data-filter="pre" aria-selected="true">入学前 <span>12</span></button>
+          <button type="button" data-filter="dorm" aria-selected="false">选宿舍 <span>12</span></button>
+          <button type="button" data-filter="arrival" aria-selected="false">来报到 <span>12</span></button>
+          <button type="button" data-filter="life" aria-selected="false">校园生活 <span>12</span></button>
+          <button type="button" data-filter="study" aria-selected="false">学习成长 <span>12</span></button>
+          <button type="button" data-filter="safe" aria-selected="false">安全权益 <span>12</span></button>
         </div>
         <div class="question-grid" id="questionGrid"></div>
         <button class="load-more" id="loadMoreButton" type="button" hidden>继续加载问题 <span>↓</span></button>
@@ -277,7 +277,7 @@
     <footer class="site-footer">
       <div class="page-shell footer-grid">
         <div class="footer-brand"><span class="brand-seal">常</span><div><strong>常学长AI</strong><p>把第一次到安工，提前过一遍。</p></div></div>
-        <div class="footer-note"><p>非学校官方 · 常学长AI V2.6正式版</p><p>知识库持续核验，动态事项请以学校最新通知为准。</p></div>
+        <div class="footer-note"><p>非学校官方 · 常学长AI V2.7正式版</p><p>知识库持续核验，动态事项请以学校最新通知为准。</p></div>
         <button type="button" data-open-contact>联系常学长本人 <span>↗</span></button>
       </div>
     </footer>
@@ -306,18 +306,20 @@
       const categoryMeta = {
         pre: { label: "入学前", color: "coral" }, dorm: { label: "选宿舍", color: "yellow" },
         arrival: { label: "来报到", color: "green" }, life: { label: "校园生活", color: "blue" },
-        study: { label: "学习成长", color: "purple" }, safe: { label: "军训安全", color: "pink" }
+        study: { label: "学习成长", color: "purple" }, safe: { label: "安全权益", color: "pink" }
       };
 
       const questions = [
         {id:"pre-first",c:"pre",q:"收到录取通知书后，第一件事做什么？",a:"先核对录取信息，再按通知书里的官方清单建立一张待办表：认证、迎新、缴费、档案、团关系和到校交通。\n\n不要看到群聊里的二维码就急着付款，也不需要因为学长推荐先买任何手机卡。所有时间节点以录取通知书、学校迎新系统和学院通知为准。",s:"官方流程整理",k:"已核验",v:"2026-08-03",scope:"2026级通用准备",img:"gate.webp"},
-        {id:"pre-auth",c:"pre",q:"统一身份认证什么时候能用？",a:"现有资料给出的预计启用时间是 8月24日，但“预计”不等于最终通知。到时用学校正式入口尝试；如果页面时间变化，以学校或学院新通知为准。\n\n不要把账号、密码或验证码发给任何个人代操作。",s:"2026级入学指南",k:"动态待核",v:"2026-08-03",scope:"启用时间可能调整",img:"library.webp"},
+        {id:"pre-auth",c:"pre",q:"统一身份认证显示账号不存在，正常吗？",a:"不一定是出问题了。2026级指南写的是统一身份认证账号预计8月24日开放激活；在正式开放或数据同步完成前，暂时无法登录不代表录取异常。\n\n不要反复试密码，也不要把账号、验证码交给陌生人代查。等学校正式通知后仍异常，再联系录取学院或系统支持。",s:"2026级新生入学指南P5",k:"动态待核",v:"2026-08-13",scope:"2026级统一身份认证，预计时间可调整",img:"library.webp",handoff:true},
         {id:"pre-welcome",c:"pre",q:"迎新系统主要用来做什么？",a:"迎新系统一般用于新生信息确认、报到准备和相关流程办理。建议只从录取通知书、学校官网或学院通知进入，别从陌生群里的短链接登录。\n\n具体模块和开放顺序可能更新，看到的页面与旧教程不同并不一定是你操作错了。",s:"官方迎新流程",k:"已核验",v:"2026-08-03",scope:"具体页面以当年系统为准",img:"campus-road.webp"},
         {id:"pre-pay",c:"pre",q:"学费和住宿费应该怎么交？",a:"只通过学校指定的正式缴费渠道操作，并逐项核对收款主体、项目名称和金额。私人二维码、口头代缴或“先转给我再统一办”都不建议。\n\n住宿费按房型计费：四人间1000元/生/年、六人间800元、八人间600元；实际房型以系统分配为准。",s:"2026级入学指南",k:"已核验",v:"2026-08-03",scope:"支付入口以学校最新通知为准",img:"square.webp",handoff:true},
         {id:"pre-file",c:"pre",q:"高中档案是自己带，还是学校邮寄？",a:"档案按生源地和毕业学校要求办理，可能是密封自带，也可能由原学校统一寄送。无论哪种方式，都不要私自拆封密封档案。\n\n你可以先问高中班主任或当地招办确认交接方式，再按安工报到要求提交。",s:"报到材料规则",k:"已核验",v:"2026-08-03",scope:"不同生源地流程会有差异",img:"gate.webp"},
         {id:"pre-group",c:"pre",q:"团关系什么时候、怎么转？",a:"团组织关系按原学校和录取学院的通知办理，线上转接与纸质材料可能都涉及。建议先保留原学校联系人和相关材料，等学院明确接收组织名称后再提交。\n\n不要凭群聊里别人成功的名称盲填，因为学院和年份不同会导致退回。",s:"报到材料规则",k:"范围有限",v:"2026-08-03",scope:"以录取学院通知为准",img:"library.webp"},
         {id:"pre-household",c:"pre",q:"上大学必须迁户口吗？",a:"不是必须。户口迁移通常是自愿选择，需要结合你自己的升学、就业与家庭安排判断。\n\n如果决定迁，按录取通知书和当地派出所要求准备；这是个人重要事项，AI不替你做最终选择。",s:"入学政策常见口径",k:"已核验",v:"2026-08-03",scope:"个体选择，必要时咨询正式部门",img:"landmark.webp",handoff:true},
         {id:"pre-pack",c:"pre",q:"入学行李到底带哪些最实用？",a:"先带证件材料、常用药、充电设备、换洗衣物和少量当天必需品。被褥、脸盆、衣架等大件，可以等确认床型和宿舍储物空间后再买。\n\n床铺官方标注为90×190cm；不同房型空间差异很大，别在选宿前一次买齐大型收纳。",s:"官方尺寸 + 在校经验",k:"一手经验",v:"2026-08-03",scope:"按个人生活习惯增减",img:"dorm-room.webp"},
+        {id:"pre-logistics",c:"pre",q:"录取通知书物流一直查不到，怎么办？",a:"先在省级招生考试机构或学校正式入口确认自己已经录取，再确认学校是否已经交寄。学校尚未交寄时，EMS自然不会显示轨迹。\n\n交寄后只通过EMS或国家政务服务平台的录取通知书查询入口查看；具体寄出时间不能靠往届经验推断。收件信息异常时，联系招生或录取学院正式渠道，不在群里公开姓名、电话和考生号。",s:"安工2026公开问答 + 审核作品第53篇",k:"官方流程整理",v:"2026-08-13",scope:"不承诺具体交寄日期",img:"campus-road.webp",handoff:true},
+        {id:"pre-major-campus",c:"pre",q:"怎么确认录取专业、学院和报到校区？",a:"先看录取查询结果和通知书上的专业全称，再对照2026级入学指南或学校正式入口确认所属学院与报到校区。专业、学院、校区是三层信息，不要把群聊里的简称当成最终安排。\n\n确认了校区，也不能顺势推断具体宿舍楼；住宿范围仍以易校园实际可选内容和学院通知为准。",s:"2026级新生入学指南 + 审核作品第54篇",k:"官方流程整理",v:"2026-08-13",scope:"校区按2026正式材料，宿舍不作推断",img:"landmark.webp",handoff:true},
 
         {id:"dorm-online",c:"dorm",q:"2026级怎么线上选宿舍？",a:"可以线上选。路径是「易校园 → 绑定校园卡 → 人脸采集 → 智慧公寓 → 更多 → 选宿」，在自己学院开放时段选择宿舍和床位。\n\n各学院分批开放，每天 08:00—18:00。你最终能看到哪些楼栋、房间和床位，以系统当时显示为准。",s:"《2026级新生入学指南》",k:"已核验",v:"2026-08-03",scope:"仅适用2026级，系统通知可覆盖",img:"dorm-building.webp"},
         {id:"dorm-date",c:"dorm",q:"我所在学院哪天选宿舍？",a:"2026级分批时间是：8/28机械与材料，8/29电子/无人机与外国语，8/30计算机与土木交通，8/31莫斯科航空与艺术，9/1飞行与化环，9/2会计、数信、文传与航空服务，9/3生物食品，9/4商学院。\n\n每天 08:00—18:00；学院名称或通知若有调整，以系统为准。",s:"《2026级新生入学指南》",k:"已核验",v:"2026-08-03",scope:"2026级分学院时间表",img:"dorm-building.webp"},
@@ -327,6 +329,8 @@
         {id:"dorm-real",c:"dorm",q:"安工宿舍真实住着怎么样？",a:"常学长住过行知苑（三里屯）2号楼六人间：有空调、阳台和独立卫生间，洗澡去公共浴室，浴室是独立隔间；楼里有洗衣、洗鞋和饮水设备。\n\n这是一个男生楼栋的亲历，不等于女生宿舍或其他宿舍区都一样。",s:"常学长2024—2026亲历",k:"一手经验",v:"2026-08-03",scope:"仅行知苑2号楼男生六人间",img:"dorm-room.webp",handoff:true},
         {id:"dorm-power",c:"dorm",q:"宿舍晚上会断电吗？",a:"常学长住的行知苑2号楼晚上不断电，但这只能代表该楼栋的居住经历，不能外推为全校永久规则。\n\n门禁、供电和设备维护都可能动态调整；如果你已经知道宿舍区和楼栋，再按具体范围核对更靠谱。",s:"常学长在校亲历",k:"一手经验",v:"2026-08-03",scope:"行知苑2号楼，不作全校保证",img:"dorm-study.webp"},
         {id:"dorm-bath",c:"dorm",q:"宿舍有独卫、空调和洗澡间吗？",a:"行知苑2号楼男生六人间的亲历是：有空调、阳台、独立卫生间，但宿舍内不能洗澡，要去公共浴室；公共浴室有独立隔间。\n\n不同宿舍区、楼栋、性别的配置可能不同。具体到你的房间，只能看系统分配和现场。",s:"常学长在校亲历",k:"范围有限",v:"2026-08-03",scope:"不外推至全校宿舍",img:"dorm-room.webp",handoff:true},
+        {id:"dorm-assignment",c:"dorm",q:"我的专业会住哪个宿舍区、几人间？",a:"现在不能负责任地报出具体楼栋和房型。现有专业—宿舍区截图、同行口述之间仍有不一致，而且都不能替代学校最终分配。\n\n你可以告诉我学院、专业和性别，用来缩小需要核对的范围；最终仍以易校园在你学院开放时显示的楼栋、房间、床位和学院通知为准。",s:"证据索引与冲突核验表P0",k:"动态待核",v:"2026-08-13",scope:"需学院、专业、性别；不把非官方截图当分配表",img:"dorm-building.webp",handoff:true},
+        {id:"dorm-error",c:"dorm",q:"易校园绑定或选宿页面异常怎么办？",a:"先核对是否到了你学院的开放日期和08:00—18:00时段，再检查姓名、学号绑定与人像采集是否按页面完成。不要连续重复提交，也不要把密码或验证码交给他人代选。\n\n仍异常时，保存不含姓名、学号、人脸和二维码的报错文字或脱敏截图，联系录取学院或系统正式支持渠道。当前资料不足以仅凭错误提示判断具体原因。",s:"2026选宿流程 + 系统安全原则",k:"动态待核",v:"2026-08-13",scope:"只给排查顺序，不诊断系统故障",img:"dorm-building.webp",handoff:true},
 
         {id:"arrive-material",c:"arrival",q:"报到当天最重要的材料有哪些？",a:"优先装好身份证、录取通知书、报到/查验相关材料，以及按原学校要求准备的密封档案和党团关系材料。\n\n证件原件与复印件分开放，手机里可留必要页面的离线截图；不要把完整证件照片发到新生群。",s:"2026级报到资料",k:"已核验",v:"2026-08-03",scope:"最终以通知书清单为准",img:"gate.webp"},
         {id:"arrive-station",c:"arrival",q:"安阳站和安阳东站，有什么区别？",a:"安阳站是普通铁路车站，安阳东站主要是高铁站。买票时一定看清终点站，两个站到学校的路线和时间不同。\n\n第一次来、行李多的情况下，从安阳东站打车到校通常更省心；具体价格和时长以当天交通为准。",s:"在校交通经验",k:"一手经验",v:"2026-08-03",scope:"路况和接站安排会变化",img:"campus-road.webp"},
@@ -336,6 +340,8 @@
         {id:"arrive-delivery",c:"arrival",q:"能不能提前把行李快递到学校？",a:"可以考虑，但要等你确认校区、宿舍区和快递点信息后再寄。不要只写“安阳工学院”就发大件，否则可能取件很远。\n\n常学长的生活经验是快递点距离宿舍大约50—100米，但不同宿舍区会有差异。",s:"在校生活经验",k:"一手经验",v:"2026-08-03",scope:"快递点位置可能调整",img:"dorm-building.webp"},
         {id:"arrive-date",c:"arrival",q:"2026级具体哪天报到？",a:"当前资料不足以在这里给出一个永远正确的日期。报到时间属于动态正式安排，应该以录取通知书、学校迎新系统和学院最新通知为准。\n\n不要因为短视频或群聊里的倒计时提前订不可退行程。",s:"正式日期待发布/复核",k:"动态待核",v:"2026-08-03",scope:"以录取通知书为最高依据",img:"gate.webp"},
         {id:"arrive-parent",c:"arrival",q:"家长能进校、能在附近住吗？",a:"家长是否能进校、车辆如何通行，要看当年迎新秩序和临时管理。住宿建议围绕你实际报到校门提前查可退订房源。\n\n这类现场规则更新很快，不宜用往年口径直接承诺。出发前再看学校或学院最新通知。",s:"现场规则待核",k:"动态待核",v:"2026-08-03",scope:"迎新期间可能临时调整",img:"gate.webp"},
+        {id:"arrive-verify",c:"arrival",q:"录取通知书怎么查验，要带查验单吗？",a:"2026级指南专门提供了录取通知书查验说明，并把录取通知书及查验单列入报到材料。建议按本人通知书随附步骤完成查验，报到时将相关原件和材料放在随身文件袋里。\n\n只使用通知书或学校官网给出的入口；身份证号、考生号、查验二维码和完整页面不要发到新生群。页面规则如有变化，以本人材料和学校后续通知为准。",s:"《2026级新生入学指南》P2—P3",k:"已核验",v:"2026-08-13",scope:"查验入口以本人通知书为准",img:"gate.webp"},
+        {id:"arrive-copies",c:"arrival",q:"报到材料原件和复印件怎么准备？",a:"按通知书清单把原件逐项核对，原件和复印件分袋存放；身份证、录取通知书及查验材料优先随身携带，不放进托运行李。\n\n常用证件复印件可经验性准备2—3份作为机动，但这不是学校对所有材料规定的统一数量。档案不要拆封，困难认定等表格按学校发放版本真实填写，最终以学院通知为准。",s:"2026报到材料 + 审核作品第80篇",k:"官方清单 + 经验建议",v:"2026-08-13",scope:"2—3份仅为防遗漏建议，不是硬性数量",img:"gate.webp"},
 
         {id:"life-food",c:"life",q:"学校食堂一顿饭大概多少钱？",a:"按常学长个人样本：午饭常见约10元，早餐和晚餐约5元左右；实际会随食量、窗口和菜品变化。\n\n行知苑餐厅有自选菜等多种餐型。把这个当生活预算参考，不是全校统一定价。",s:"常学长在校消费样本",k:"一手经验",v:"2026-08-03",scope:"个人样本，价格会变",img:"meal.webp"},
         {id:"life-budget",c:"life",q:"一个月生活费准备多少合适？",a:"常见参考区间是每月1000—1500元，但差异主要来自外卖、购物、出行和社交，不是一个“标准答案”。\n\n可以先按餐费、日用品、交通、通讯和机动金分开记账，第一个月观察自己的真实开销，再调整。",s:"在校生活样本",k:"一手经验",v:"2026-08-03",scope:"个人消费差异较大",img:"canteen.webp"},
@@ -343,8 +349,10 @@
         {id:"life-shop",c:"life",q:"校内买日用品方便吗？",a:"基础日用品和常见生活补给一般能在校内或周边解决，不必开学前把四年用品一次带齐。\n\n先过一两天真实宿舍生活，再买收纳、插座等容易买错尺寸的东西；涉及电器功率，要先看宿舍管理要求。",s:"在校生活经验",k:"一手经验",v:"2026-08-03",scope:"商户和商品会变化",img:"campus-road.webp"},
         {id:"life-net",c:"life",q:"校园网速度怎么样？",a:"常学长的体验是校园网约100Mbps，有线下载速度曾达到约10MB/s，但楼栋、时段、设备和套餐都会影响体验。\n\n这只能作为亲历参考，不是对每个宿舍的测速承诺。刚到校不必因为销售话术立即办长期套餐。",s:"常学长网络使用体验",k:"一手经验",v:"2026-08-03",scope:"速度因位置和时段变化",img:"dorm-study.webp"},
         {id:"life-card",c:"life",q:"不办学长推荐的手机卡，会影响报到吗？",a:"不会。是否购买某张手机卡，不应影响入学报到、上课和基本校园生活。手机通信套餐、校园网和校园卡是不同的东西。\n\n先看清运营商、月租、合约期、注销方式和赠送条件，再决定；任何“今天不办就不能用校园服务”的说法都要警惕。",s:"官方边界 + 消费提醒",k:"已核验",v:"2026-08-03",scope:"不为任何通信套餐背书",img:"campus-road.webp"},
-        {id:"life-difference",c:"life",q:"校园卡、手机卡、校园网是一回事吗？",a:"不是。校园卡用于校内身份或消费等场景；手机卡是运营商通信服务；校园网是学校网络接入。它们可能在办理活动中被一起介绍，但功能和合同主体不同。\n\n判断一项服务是否需要，先问清“谁收费、买了什么、不买会怎样、如何取消”。",s:"服务边界整理",k:"已核验",v:"2026-08-03",scope:"具体办理规则以官方说明为准",img:"library.webp"},
-        {id:"life-bike",c:"life",q:"新生能骑电动车进校园吗？",a:"2025年以后学校对电动车入校管理趋严，但2026年具体准入、登记和停放规则仍需以最新通知为准。\n\n最稳妥的做法是先别急着买，入校后确认宿舍距离、充电条件和当年规则，再决定是否需要。",s:"校园管理动态信息",k:"动态待核",v:"2026-08-03",scope:"2026具体规则待核",img:"campus-road.webp"},
+        {id:"life-difference",c:"life",q:"校园卡、手机卡、银行卡、校园网有什么区别？",a:"校园卡对应校内身份或消费等场景；手机卡是运营商通信服务；学校联名银行卡用于个人金融及部分奖助贷事项；校园网是学校网络接入。它们可能同时被介绍，但不是同一项服务。\n\n判断是否需要办理，先问清服务主体、费用、用途、不办理的影响和取消方式。任何一项都不能冒充另一项来制造“必须办理”的焦虑。",s:"2026级指南 + 服务边界核验",k:"已核验",v:"2026-08-13",scope:"具体功能与办理规则以当年官方说明为准",img:"library.webp"},
+        {id:"life-bike",c:"life",q:"新生能骑电动车进校园吗？",a:"2026年的准入、登记、停放和充电规则目前还没有足够材料可以确定，不同校区和宿舍区也可能存在差异。\n\n最稳妥的做法是先别急着买。入校后确认自己的宿舍距离、当期管理通知和正规充电条件，再决定是否需要；不要仅凭往届帖子外推今年规则。",s:"校园管理动态事项",k:"动态待核",v:"2026-08-13",scope:"2026具体规则待正式通知或现场核验",img:"campus-road.webp"},
+        {id:"life-bank",c:"life",q:"学校联名银行卡必须办吗？",a:"2026级指南中的学校联名银行卡，主要涉及奖助学金发放、助学贷款余额等学校财务事项，不能写成所有新生正常报到的统一前提。\n\n它不等于校园卡、手机卡，也不等于学校统一支付平台。是否需要申请以及具体用途，按本人指南和学校后续财务通知办理；不要通过私人二维码办卡或代缴。",s:"《2026级新生入学指南》P1、P7",k:"已核验",v:"2026-08-13",scope:"不公开银行二维码、完整账户或私人入口",img:"library.webp",handoff:true},
+        {id:"life-medical",c:"life",q:"在学校生病或半夜不舒服，先找谁？",a:"常见小病可以先联系宿管、辅导员或校内基础医疗点，确认当时可用的就诊渠道；医疗点正式名称、位置和开放时间需要按2026现场信息核对。\n\n出现呼吸困难、意识异常、剧烈疼痛等紧急症状，不要让聊天页面判断，立即联系120、学校正式人员和家长。就医时只向正规医护提供必要健康信息。",s:"常学长在校经验 + 安全处置原则",k:"需正式处理",v:"2026-08-13",scope:"不提供诊断，医疗点安排动态变化",img:"campus-road.webp",handoff:true},
 
         {id:"study-load",c:"study",q:"机械专业一周大概多少课？",a:"常学长机械专业的个人体验约每周15节课，但不同年级、学期和专业培养方案会变化。\n\n大学课表不像高中每天固定排满，空课不等于没任务；预习、作业、实验和项目通常要自己安排。",s:"常学长机械专业亲历",k:"一手经验",v:"2026-08-03",scope:"不外推至其他专业和学期",img:"workshop.webp"},
         {id:"study-evening",c:"study",q:"晚上必须上晚自习吗？",a:"常学长所在机械专业没有统一强制晚自习的个人经历，但不同学院、年级和培养安排可能不一样。\n\n如果你的辅导员或学院发布明确要求，以本学院通知为准。不要把学长的经历当成学校永久规则。",s:"常学长个人经历",k:"范围有限",v:"2026-08-03",scope:"仅个人专业经历",img:"dorm-study.webp"},
@@ -354,6 +362,8 @@
         {id:"study-sport",c:"study",q:"学校里平时有哪些运动和活动？",a:"校园里有体育场、运动会和不同类型的学生社团活动。具体场地开放、项目和招新时间每年会变。\n\n如果你有明确项目需求，入校后看社团招新与体育场公告；先体验，再决定是否购买长期装备。",s:"校园实拍 + 在校经历",k:"一手经验",v:"2026-08-03",scope:"活动安排以当期通知为准",img:"sports.webp"},
         {id:"study-practice",c:"study",q:"工科会有动手实训吗？",a:"会有实践与实训场景。常学长的素材里包括红外寻迹小车等课堂实践，但具体项目由专业、课程和老师安排。\n\n不要把一个课程作品理解成所有新生都会做；更重要的是持续保存过程照片、代码和总结，它们会成为你的作品集。",s:"常学长工科实训经历",k:"一手经验",v:"2026-08-03",scope:"不同专业课程差异明显",img:"workshop.webp"},
         {id:"study-roommate",c:"study",q:"和室友相处不好，刚开学怎么办？",a:"先把作息、卫生、灯光、声音和公共物品这五件事说清楚，尽量讨论具体行为，而不是给人贴标签。\n\n如果长期冲突、影响安全或无法自行协调，及时找辅导员或宿管。AI可以帮你整理表达，但不替正式人员处理纠纷。",s:"新生适应建议",k:"建议",v:"2026-08-03",scope:"涉及安全时立即找正式人员",img:"dorm-study.webp",handoff:true},
+        {id:"study-school-fit",c:"study",q:"安工到底怎么样，适合什么样的人？",a:"从学校正式定位看，安工是一所公办、应用型本科院校；从常学长在主校区机械专业学习两年的体验看，基本设施、生活成本和实践学习条件比较完整，老师与资源需要你主动靠近。\n\n愿意找老师、做项目、参加竞赛并自己规划大学的人，通常会收获更多。这是个人体验，不是排名、就业或所有专业体验的保证。",s:"学校公开信息 + 常学长两年亲历",k:"一手评价",v:"2026-08-13",scope:"主校区机械专业个人体验，不外推全校",img:"landmark.webp"},
+        {id:"study-first-days",c:"study",q:"入校前三天最值得先做什么？",a:"第一天先完成报到、入住和基本物品补齐；第二天认清宿舍、学院、教学楼、食堂、快递点与常用官方入口；第三天和室友、班助或辅导员确认近期安排，再留一点时间休息。\n\n不用急着把社团、兼职、办卡和采购全部决定完。班会、课程与学院活动以当期通知为准，这份顺序只帮助你降低第一次到校的混乱感。",s:"常学长在校经验 + 审核作品第36篇",k:"一手建议",v:"2026-08-13",scope:"低压力适应顺序，不替代学院日程",img:"campus-road.webp"},
 
         {id:"safe-days",c:"safe",q:"2026军训到底多少天？",a:"现在还不能确定。现有2026官方指南确认了军训服价格和无捆绑销售，但没有给出2026军训具体日期与时长。\n\n常学长2024级当时大约训了21天，只能作为往届体验，不能拿来替2026做结论。等学院或学校发布正式安排后再确认。",s:"官方指南 + 2024亲历",k:"动态待核",v:"2026-08-03",scope:"2024经历不可外推至2026",img:"military.webp"},
         {id:"safe-clothes",c:"safe",q:"军训服多少钱？还有别的费用吗？",a:"2026级入学指南写明军训服每套89元，并注明不存在其他捆绑销售。付款时看清正式通知、收款主体和项目。\n\n如果现场出现与指南不同的说法，先别急着付款，保留页面或通知截图，再向学院或学校正式渠道核实。",s:"《2026级新生入学指南》",k:"已核验",v:"2026-08-03",scope:"军训服官方口径",img:"military.webp"},
@@ -363,6 +373,8 @@
         {id:"safe-pay",c:"safe",q:"已经付款但没收到东西，怎么办？",a:"先不要重复付款，保留订单、支付时间、金额和对方承诺的截图；不要发送银行卡号、验证码或完整身份证。\n\n这类问题需要真人核对，我不能替任何一方判责，也不能先承诺退款。如果属于学校费用，优先在学校统一支付平台和正式渠道查账。",s:"人工接管规则",k:"需人工",v:"2026-08-03",scope:"支付与履约纠纷",img:"canteen.webp",handoff:true},
         {id:"safe-private",c:"safe",q:"把身份证和通知书发来，能帮我检查吗？",a:"先不要发完整证件。姓名、身份证号、考生号、二维码和住址都请遮住；核对材料通常不需要这些信息。\n\n你可以只提供“材料名称”的文字清单。涉及身份查验、账号激活或系统认证，请直接走学校正式入口。",s:"隐私最小化原则",k:"隐私提醒",v:"2026-08-03",scope:"不接收或保存完整证件",img:"gate.webp"},
         {id:"safe-urgent",c:"safe",q:"遇到诈骗、威胁或紧急情况找谁？",a:"先确保人身安全，保留证据，不继续转账或与对方纠缠。紧急情况拨打110或120，同时联系辅导员、宿管、保卫等学校正式人员和家长。\n\n常学长可以帮助整理经过，但不能替代警方、医疗和学校正式处置。",s:"紧急事件分流原则",k:"立即转正式渠道",v:"2026-08-03",scope:"人身与财产安全优先",img:"campus-road.webp",handoff:true},
+        {id:"safe-group",c:"safe",q:"新生群、家长群和“学长私聊”怎么判断真假？",a:"先看群入口是否来自学校、录取学院或本人通知书里的正式渠道，再核对管理员身份和通知能否在官网或学院渠道交叉确认。一个群里人多、头像像老师，都不能单独证明它是官方群。\n\n凡是催促转账、代查账号、索要验证码或完整证件的，先停止操作并留证。不能仅凭一张截图给某个群定性，但涉及付款时只认正式收款主体。",s:"真实评论需求 + 新生安全原则",k:"安全提醒",v:"2026-08-13",scope:"不无证据判定具体群聊或个人",img:"gate.webp",handoff:true},
+        {id:"safe-loan-payment",c:"safe",q:"办了生源地贷款，还要先全额交学费吗？",a:"不要重复缴纳贷款覆盖的部分。按2026级指南进入迎新系统“绿色通道”，填写贷款回执等信息，并依照贷款学生的特殊缴费流程处理；其余应缴金额以学校统一支付平台实际显示为准。\n\n贷款额度、到账时间和最终个人缴费额不能由本页面承诺。系统开放前先保存受理证明，遇到不一致时联系资助部门或录取学院。",s:"《2026级新生入学指南》P4、P6",k:"官方流程整理",v:"2026-08-13",scope:"不计算或承诺个人最终缴费额",img:"library.webp",handoff:true},
         {id:"pre-green",c:"pre",q:"学费暂时没凑齐，还能报到吗？",a:"如果家庭经济特别困难、暂时筹不齐学费和住宿费，不要因为害怕就放弃报到。学校公开问答说明，可在报到时通过“绿色通道”先办理入学手续，再按实际情况衔接困难认定与资助。\n\n绿色通道不等于自动免学费。请提前查看学校学生资助和学院通知，只提交真实材料，不碰陌生贷款与所谓保证金。",s:"审核作品第41篇 + 学校公开问答",k:"官方信息整理",v:"2026-08-12",scope:"具体材料以资助部门最新通知为准",img:"gate.webp",handoff:true},
         {id:"pre-aid",c:"pre",q:"安工新生可以申请哪些资助？",a:"已审核资料归纳的资助路径包括：服兵役高等学校学生国家教育资助、助学贷款、奖学金、国家助学金、勤工助学、绿色通道和企业奖助学金。\n\n它们不是人人都能全部叠加获得；资格、金额、评审年级和材料以学校当期资助通知为准。新生阶段可优先了解助学贷款、绿色通道和家庭经济困难认定。",s:"审核作品第96篇 + 2026入学指南",k:"官方信息整理",v:"2026-08-13",scope:"不承诺任何个人必然获得资助",img:"library.webp",handoff:true},
         {id:"dorm-bed",c:"dorm",q:"选宿舍时，床位怎么挑更实用？",a:"先看自己更在意上下床、采光、离门远近还是离空调的位置，再结合房间实际可选床位决定。靠门可能更吵，靠窗可能更亮；没有一种床位对所有人都最好。\n\n系统里能否查看完整布局以实际页面为准。不要为了抢所谓“黄金床位”把账号密码交给别人。",s:"审核作品第30篇",k:"一手经验",v:"2026-08-12",scope:"宿舍布局与个人习惯不同",img:"dorm-room.webp"},
@@ -395,7 +407,7 @@
 
       function renderQuestions() {
         const term = searchInput.value.trim().toLowerCase();
-        const visible = questions.filter(item => (currentFilter === "all" || item.c === currentFilter) && (!term || (item.q + item.a + item.s).toLowerCase().includes(term)));
+        const visible = questions.filter(item => (term || currentFilter === "all" || item.c === currentFilter) && (!term || (item.q + item.a + item.s + item.scope).toLowerCase().includes(term)));
         const rendered = visible.slice(0, visibleLimit);
         grid.innerHTML = rendered.map((item, index) => {
           const meta = categoryMeta[item.c];
@@ -446,7 +458,7 @@
       }
 
       function statusClass(status) {
-        if (status.includes("核验")) return "verified";
+        if (status.includes("核验") || status.includes("官方")) return "verified";
         if (status.includes("经验") || status.includes("建议")) return "experience";
         if (status.includes("人工") || status.includes("正式") || status.includes("隐私")) return "human";
         return "pending";
@@ -499,7 +511,7 @@
       function askFreeText(text) {
         const item = findQuestion(text);
         if (item) return ask(item, text);
-        const fallback = {q:text,a:"这个说法暂时没有匹配到问题库里的确定答案。你可以换成“宿舍、选宿、报到、军训、校园网、手机卡、食堂、课程”等关键词再问。\n\n如果它涉及你个人的学院、性别、楼栋、付款或权益，我建议交给常学长本人结合上下文判断，而不是让我编一个看起来像答案的答案。",s:"V2.6新生问题库",k:"需人工",v:"2026-08-12",scope:"未匹配问题不自动生成",img:"campus-road.webp",handoff:true};
+        const fallback = {q:text,a:"这个说法暂时没有匹配到问题库里的确定答案。你可以换成“宿舍、选宿、报到、军训、校园网、手机卡、食堂、课程”等关键词再问。\n\n如果它涉及你个人的学院、性别、楼栋、付款或权益，我建议交给常学长本人结合上下文判断，而不是让我编一个看起来像答案的答案。",s:"V2.7新生问题库",k:"需人工",v:"2026-08-13",scope:"未匹配问题不自动生成",img:"campus-road.webp",handoff:true};
         ask(fallback, text);
       }
 
